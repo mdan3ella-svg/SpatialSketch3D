@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"><meta name="color-scheme" content="light dark"><title>SPATIAL SKETCH 3D | Design Without Boundaries</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"><meta name="color-scheme" content="light dark"><title>SPATIAL SKETCH 3D v2.4 | Design Without Boundaries</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2213%22%20fill%3D%22%23102a32%22%2F%3E%3Cpath%20d%3D%22M49%2017H26C10%2017%2010%2033%2026%2033h12c16%200%2016%2016%200%2016H15%22%20fill%3D%22none%22%20stroke%3D%22%2354ded5%22%20stroke-width%3D%226%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14%2042l8%20-8M43%2015l7%207%22%20stroke%3D%22%23ee945b%22%20stroke-width%3D%224%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2249%22%20r%3D%223%22%20fill%3D%22%23ee945b%22%2F%3E%3C%2Fsvg%3E">
 <style>
 :root{--bg:#edf2f3;--shell:#f9fbfc;--panel:#fff;--ink:#162a33;--muted:#647882;--line:#d5e0e5;--accent:#008d95;--orange:#ef8547;--lift:0 5px 28px #142c3213;--view:#ecf3f5;--font:Inter,'Segoe UI',Arial,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:12px/1.42 var(--font);overflow:hidden}body[data-theme=obsidian]{--bg:#11191e;--shell:#172227;--panel:#1e2c33;--ink:#edf7f8;--muted:#9eb2bb;--line:#36505a;--accent:#42d8d3;--view:#1b282e;--lift:0 7px 28px #0005}body[data-theme=graphite]{--bg:#222b30;--shell:#2c353a;--panel:#344148;--ink:#f1f4f5;--muted:#b4c0c4;--line:#4d6069;--accent:#55d1c9;--view:#262e34}body[data-theme=blueprint]{--bg:#092238;--shell:#112e44;--panel:#163b54;--ink:#effaff;--muted:#a8d0e3;--line:#2a5e78;--accent:#49dcf6;--view:#11314d}button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:7px 10px;transition:background .12s,border .12s}button:hover{border-color:var(--accent)}button.active,.activeTool{color:#fff!important;background:var(--accent)!important;border-color:var(--accent)!important}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--orange);outline-offset:1px}button:disabled{opacity:.42;cursor:not-allowed}input,select{min-width:0;max-width:100%;padding:6px 7px;border-radius:5px;border:1px solid var(--line);background:var(--shell);color:var(--ink)}input[type=color]{padding:2px;height:30px;width:46px;cursor:pointer}input[type=range]{padding:0;width:100%;accent-color:var(--accent)}input[type=number]{width:100%}small,.muted{color:var(--muted)}strong{font-weight:700}.top{height:58px;background:var(--shell);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:13px;padding:0 15px;position:relative;z-index:3}.logo{min-width:208px;display:flex;align-items:center;gap:11px}.logoMark{height:33px;width:33px;background:#102a32;border-radius:8px;display:grid;place-items:center;font-size:24px;font-weight:900;color:#51d7d1}.brand{font-weight:900;font-size:13px;letter-spacing:.5px}.brand small{display:block;font-size:9px;letter-spacing:1.05px;font-weight:700}.topgroup{display:flex;align-items:center;gap:5px}.topgroup button{white-space:nowrap}.topgroup select{max-width:120px}.top .fill{flex:1}.projectTitle{width:145px;text-overflow:ellipsis}.action{background:var(--accent);color:#fff;border-color:var(--accent)}.outline{background:transparent}.bodyLayout{display:grid;grid-template-columns:238px minmax(0,1fr) 282px;height:calc(100vh - 83px)}.side{background:var(--shell);overflow-y:auto;min-height:0;padding:12px;border-right:1px solid var(--line)}.rightside{border-right:0;border-left:1px solid var(--line)}.sectionLabel{font-size:10px;text-transform:uppercase;letter-spacing:1.15px;color:var(--muted);font-weight:800;margin:15px 0 7px}.sectionLabel:first-child{margin-top:4px}.toolgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.toolgrid button{height:43px;padding:3px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:10px}.toolgrid .ico{font-size:16px;line-height:16px}.group{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.group button{padding:6px 9px}.panel{border:1px solid var(--line);background:var(--panel);padding:10px;border-radius:8px;margin:7px 0}.panel h3{font-size:12px;margin:0 0 9px}.field{display:grid;grid-template-columns:80px 1fr;align-items:center;gap:8px;margin:6px 0}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}.three label{font-size:9px;color:var(--muted);display:block}.three input{margin-top:3px;font-size:11px;padding:6px 3px}.items{max-height:180px;overflow:auto;margin:5px -3px}.object{display:flex;align-items:center;gap:5px;width:100%;border:1px solid transparent;padding:6px;border-radius:4px;margin:1px 0;text-align:left;background:transparent;font-size:11px}.object:hover{background:var(--bg)}.object.selected{background:color-mix(in srgb,var(--accent) 12%,transparent);border-color:var(--accent)}.object .name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.object .visibility{border:0;padding:1px 4px;background:transparent}.object .type{font-size:10px;color:var(--muted)}.viewWrap{position:relative;min-width:0;min-height:0;background:var(--view);overflow:hidden}.viewWrap canvas{position:absolute;width:100%;height:100%;left:0;top:0;touch-action:none}.viewWrap #overlay{pointer-events:none}.viewNav{position:absolute;top:12px;left:12px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;pointer-events:none}.viewNav>*{pointer-events:auto}.viewNav select,.viewNav button{background:var(--panel);box-shadow:var(--lift)}.viewNav .tip{background:var(--panel);padding:8px 10px;border-radius:6px;color:var(--muted);font-size:10px;max-width:260px}.bottomHint{position:absolute;bottom:11px;left:12px;background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:9px 11px;color:var(--ink);box-shadow:var(--lift);max-width:min(520px,95%);pointer-events:none}.bottomHint strong{color:var(--accent)}.status{height:25px;background:var(--shell);border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:0 14px;color:var(--muted);font-size:10px}.status .expand{flex:1}.badgeTiny{padding:2px 6px;border-radius:4px;background:color-mix(in srgb,var(--accent) 13%,transparent);color:var(--accent);font-weight:800;font-size:10px}.row{display:flex;gap:6px;align-items:center}.row>*{min-width:0}.row>*:first-child{flex:1}.row button{flex:0}.sep{height:1px;background:var(--line);margin:10px 0}.toast{position:fixed;bottom:38px;left:50%;transform:translateX(-50%);z-index:12;background:#162f36;color:#fff;border-radius:8px;box-shadow:0 8px 25px #0004;padding:12px 16px;max-width:420px;pointer-events:none}.hidden{display:none!important}.launch{position:fixed;inset:0;background:#eaf0f2;z-index:15;display:flex;align-items:center;justify-content:center;padding:24px;overflow:auto}.hero{width:min(880px,95vw);background:#fff;border:1px solid #d8e3e5;box-shadow:0 25px 90px #122b3340;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1fr 1.1fr;min-height:470px}.heroArt{background:radial-gradient(circle at 70% 40%,#1b4c55,#0c2731 70%);padding:36px;position:relative;overflow:hidden;color:white}.heroArt:before{content:'';position:absolute;width:270px;height:270px;border:30px solid #46d8d045;transform:rotate(30deg) skew(-12deg);top:155px;left:110px;border-radius:32%;box-shadow:0 0 60px #46dbd044}.heroArt:after{content:'';position:absolute;width:240px;height:160px;border:2px solid #ff9a6066;transform:rotate(-24deg);top:240px;left:50px;border-radius:35%}.heroArt h1{position:relative;z-index:1;font-size:31px;letter-spacing:-1.2px;margin:60px 0 10px}.heroArt p{position:relative;z-index:1;color:#aed6db;font-size:14px}.heroInfo{padding:32px;display:flex;flex-direction:column;justify-content:center}.heroInfo h2{font-size:23px;margin:0 0 9px}.heroInfo p{font-size:13px;color:#5b6e78;line-height:1.6}.launchBtns{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0}.launchBtns button{padding:13px 8px;font-weight:700}.launchBtns .action{grid-column:span 2}.demoList{display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.demoList button{font-size:11px}.modalBack{position:fixed;inset:0;z-index:12;background:#07151ab3;display:flex;align-items:center;justify-content:center;padding:14px}.modal{background:var(--panel);border-radius:11px;padding:20px;max-width:570px;width:100%;max-height:85vh;overflow:auto;box-shadow:0 22px 80px #0005}.modal h2{margin-top:0}.modal p{line-height:1.6}.modal .close{float:right}.dim{font-size:10px;color:var(--muted);margin-top:3px}.hint{color:var(--muted);font-size:10px;margin:5px 0}.inspectorGrid{display:grid;grid-template-columns:1fr 1fr;gap:5px}.sectionTabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}.sectionTabs button{padding:9px 3px;font-size:10px}.overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.swatches{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:6px 0}.swatch{height:24px;border:1px solid #0003;border-radius:5px;padding:0}.swatch:hover{outline:2px solid var(--accent)}body.presentation .side,body.presentation .rightside,body.presentation .top,body.presentation .status{display:none!important}body.presentation .bodyLayout{height:100vh;display:block}body.presentation .viewWrap{height:100vh}body.presentation .bottomHint{display:none}body.presentation .viewNav{display:none}@media(max-width:1180px){.bodyLayout{grid-template-columns:205px minmax(0,1fr) 245px}.top{gap:5px;padding:0 7px}.logo{min-width:150px}.topgroup button{padding:6px 7px}.projectTitle{width:102px}}@media(max-width:860px){.bodyLayout{grid-template-columns:172px minmax(0,1fr)}.rightside{position:fixed;right:0;top:58px;bottom:25px;width:270px;z-index:4;box-shadow:var(--lift)}body.hideInspector .rightside{display:none}.top .projectTitle{display:none}.top .logo{min-width:115px}.topgroup .compactHide{display:none}}@media(max-width:560px){.bodyLayout{grid-template-columns:130px minmax(0,1fr)}.side{padding:5px}.toolgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.logo{min-width:88px}.brand{font-size:11px}.brand small{display:none}.logoMark{height:25px;width:25px;font-size:17px}.top{height:48px}.bodyLayout{height:calc(100vh - 73px)}.top button{padding:4px}.top .topgroup select{max-width:80px}.rightside{top:48px}.hero{display:block}.heroArt{min-height:150px;padding:20px}.heroArt h1{font-size:21px;margin:20px 0}.heroInfo{padding:20px}.viewNav .tip{display:none}}
 
 
-/* RESPONSIVE SHELL PATCH v2.2: body and camera view are flex/grid sized,
+/* RESPONSIVE SHELL PATCH v2.4: body and camera view are flex/grid sized,
    not sized using hard-coded viewport-minus-header calculations. */
 html,body{width:100%;height:100%;min-width:0;min-height:0}
 body{height:100vh;height:100dvh;display:flex;flex-direction:column;overflow:hidden}
@@ -160,7 +160,7 @@ body.presentation .spatialTransformDock,body.presentation .ssCompass{display:non
 <div class="sectionLabel">Studio &amp; environment</div><div class="panel"><div class="field"><label>Theme</label><select id="themeSelect"><option value="white">Studio white</option><option value="obsidian">Obsidian black</option><option value="graphite">Graphite</option><option value="blueprint">Blueprint blue</option></select></div><div class="field"><label>Exposure</label><input id="exposure" type="range" min="0.3" max="2.4" value="1.0" step="0.1"></div><div class="field"><label>Render width</label><input id="renderWidth" type="number" min="256" max="4096" value="1920" step="64"></div><div class="field"><label>Render height</label><input id="renderHeight" type="number" min="256" max="4096" value="1080" step="64"></div><div class="field"><label>Format</label><select id="renderFormat"><option value="png">PNG</option><option value="jpeg">JPEG</option><option value="webp">WebP</option></select></div><label class="row"><input type="checkbox" id="transparentRender" style="flex:0"> Transparent image background</label></div>
 <div class="sectionLabel">Camera library</div><div class="panel"><div class="row"><select id="cameraList" title="Stored camera viewpoints"><option value="">— saved cameras —</option></select><button id="recallCameraBtn">View</button></div><div class="hint">Create cameras from the current viewport. These views are saved in the native document.</div></div>
 </aside></div>
-<footer class="status"><span class="badgeTiny" id="modeStatus">SKETCH</span><span id="statusText">Ready</span><span class="expand"></span><span id="countText">0 objects</span><span id="fpsText">WebGL2</span><span>SPATIAL SKETCH 3D · 2.2 Controls</span></footer>
+<footer class="status"><span class="badgeTiny" id="modeStatus">SKETCH</span><span id="statusText">Ready</span><span class="expand"></span><span id="countText">0 objects</span><span id="fpsText">WebGL2</span><span>SPATIAL SKETCH 3D · 2.4 Motion Lab</span></footer>
 <div class="launch" id="launch"><div class="hero"><div class="heroArt"><div style="font-size:11px;letter-spacing:4px;font-weight:800;color:#62ddd9">VERTASCAN / CREATIVE TECHNOLOGY</div><h1>SPATIAL<br>SKETCH <span style="color:#5bebe0">3D</span></h1><p>Spatial Sketching &amp;<br>Computational Design Studio</p><div style="position:absolute;bottom:27px;color:#75d0d1;letter-spacing:2px;font-size:11px">DESIGN WITHOUT BOUNDARIES</div></div><div class="heroInfo"><div style="font-size:10px;letter-spacing:2px;color:#008d95;font-weight:800">OFFLINE-CAPABLE EDITION</div><h2>Shape your next concept.</h2><p>Sketch precise profiles in 3D, turn them into editable forms, assign PBR-inspired materials, arrange scenes and export real 3D files.</p><div class="launchBtns"><button class="action" id="launchNew">＋ Start new project</button><button id="launchOpen">↥ Open project / model</button><button id="launchResume">↶ Restore autosave</button></div><div class="sectionLabel" style="margin-top:8px">Explore editable demo scenes</div><div class="demoList"><button data-demo="vehicle">◉ Vehicle</button><button data-demo="architecture">▣ Architecture</button><button data-demo="product">⬡ Product</button><button data-demo="mechanical">⚙ Mechanical</button><button data-demo="environment">◈ Environment</button></div><p style="font-size:10px;margin-top:17px">Self-contained browser application. No external libraries or web account. Advanced mesh Booleans, rational NURBS, UV baking, path tracing, animation and scaled drawings included. Exact CAD and professional certification remain external.</p></div></div></div>
 <div id="panelScrim" aria-hidden="true"></div><div class="modalBack hidden" id="modalBack"><div class="modal" id="modalContent"></div></div><input id="filePicker" class="hidden" type="file" accept=".json,.spatialsketch,.formcraft,.glb,.obj,.stl,.svg">
 <script id="embeddedProject" type="application/json"></script>
@@ -352,9 +352,43 @@ function exportOBJ(){let lines=['# SPATIAL SKETCH 3D OBJ export','# Units: '+pro
 function exportSTL(){let tris=project.objects.filter(o=>o.mesh&&o.visible).reduce((s,o)=>s+o.mesh.indices.length/3,0),buffer=new ArrayBuffer(84+tris*50),dv=new DataView(buffer),enc=new TextEncoder().encode('SPATIAL SKETCH 3D Mesh · units '+project.unit);new Uint8Array(buffer,0,Math.min(80,enc.length)).set(enc.slice(0,80));dv.setUint32(80,tris,true);let offset=84;for(let o of project.objects){if(!o.visible||!o.mesh)continue;let m=o.mesh,mat=matTRS(o);for(let i=0;i<m.indices.length;i+=3){let p=[0,1,2].map(j=>mp(mat,m.positions.slice(m.indices[i+j]*3,m.indices[i+j]*3+3))),n=V.norm(V.cross(V.sub(p[1],p[0]),V.sub(p[2],p[0])));for(let v of [...n,...p.flat()]){dv.setFloat32(offset,v,true);offset+=4}dv.setUint16(offset,0,true);offset+=2}}downloadBlob(new Blob([buffer],{type:'model/stl'}),safeName(project.name)+'.stl')}
 function eulerQuat(rot){let [x,y,z]=rot.map(v=>rad(v)/2),cx=Math.cos(x),cy=Math.cos(y),cz=Math.cos(z),sx=Math.sin(x),sy=Math.sin(y),sz=Math.sin(z);return[sx*cy*cz-cx*sy*sz,cx*sy*cz+sx*cy*sz,cx*cy*sz-sx*sy*cz,cx*cy*cz+sx*sy*sz]}
 function exportGLB(){let model={asset:{version:'2.0',generator:'SPATIAL SKETCH 3D standalone'},scene:0,scenes:[{nodes:[]}],nodes:[],meshes:[],materials:[],bufferViews:[],accessors:[],buffers:[{byteLength:0}]},parts=[],length=0,nodeById={};function block(typed,target){let size=typed.byteLength,pad=(4-length%4)%4;if(pad){parts.push(new Uint8Array(pad));length+=pad}let offset=length;parts.push(new Uint8Array(typed.buffer,typed.byteOffset,typed.byteLength));length+=size;model.bufferViews.push({buffer:0,byteOffset:offset,byteLength:size,...(target?{target}:{})});return model.bufferViews.length-1}function accessor(typed,comp,type,target){let idx=block(typed,target),count=typed.length/(type==='VEC3'?3:type==='VEC2'?2:type==='VEC4'?4:1),a={bufferView:idx,componentType:comp,count,type};if(type==='VEC3'&&comp===5126){let min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];for(let i=0;i<typed.length;i+=3)for(let j=0;j<3;j++){min[j]=Math.min(min[j],typed[i+j]);max[j]=Math.max(max[j],typed[i+j])}a.min=min;a.max=max}model.accessors.push(a);return model.accessors.length-1}
-for(let o of project.objects){if(!o.mesh||!o.visible)continue;let m=o.mesh;if(!m.indices.length)continue;let mat=o.mat||MAT.paint,indices=new Uint32Array(m.indices),pos=new Float32Array(m.positions),norm=new Float32Array(m.normals),uv=new Float32Array(m.uvs),pi=accessor(pos,5126,'VEC3',34962),ni=accessor(norm,5126,'VEC3',34962),ui=accessor(uv,5126,'VEC2',34962),ii=accessor(indices,5125,'SCALAR',34963);let material={name:o.name+' / PBR',pbrMetallicRoughness:{baseColorFactor:[...rgb(mat.color),mat.alpha],metallicFactor:mat.metal,roughnessFactor:mat.rough},doubleSided:true,alphaMode:mat.alpha<.999?'BLEND':'OPAQUE',emissiveFactor:rgb(mat.color).map(v=>Math.min(1,v*mat.emit))};if(o.bake?.maps?.albedo){model.images??=[];model.textures??=[];let addPNG=(src)=>{let raw=atob(src.substring(src.indexOf(',')+1)),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);let view=block(bytes);model.images.push({mimeType:'image/png',bufferView:view});model.textures.push({source:model.images.length-1});return model.textures.length-1};material.pbrMetallicRoughness.baseColorFactor=[1,1,1,mat.alpha];material.pbrMetallicRoughness.baseColorTexture={index:addPNG(o.bake.maps.albedo)};if(o.bake.maps.ao)material.occlusionTexture={index:addPNG(o.bake.maps.ao)};material.extras={normalMapSpace:'object-space; not GLTF tangent-space',uvAtlas:'spatial-sketch-triangle-atlas'}}model.materials.push(material);model.meshes.push({name:o.name,primitives:[{attributes:{POSITION:pi,NORMAL:ni,TEXCOORD_0:ui},indices:ii,material:model.materials.length-1,mode:4}]});model.nodes.push({name:o.name,mesh:model.meshes.length-1,translation:o.pos,rotation:eulerQuat(o.rot),scale:o.scale,extras:{spatialSketchId:o.id,formcraftId:o.id,sourceSketch:o.source||null}});model.scenes[0].nodes.push(model.nodes.length-1);nodeById[o.id]=model.nodes.length-1}
-// Bake object transform keyframes into standard glTF translation/rotation/scale channels.
-let animations=project.animations; if(animations?.tracks){let channels=[],samplers=[];for(let [id,keys] of Object.entries(animations.tracks)){let node=nodeById[id];if(node===undefined||keys.length<2)continue;keys=[...keys].sort((a,b)=>a.t-b.t);let times=new Float32Array(keys.map(k=>k.t)),ti=accessor(times,5126,'SCALAR',34962);model.accessors[ti].min=[times[0]];model.accessors[ti].max=[times[times.length-1]];for(let [field,path] of [['pos','translation'],['rot','rotation'],['scale','scale']]){let dim=path==='rotation'?'VEC4':'VEC3',values=new Float32Array(keys.flatMap(k=>path==='rotation'?eulerQuat(k.rot):(k[field]||[0,0,0]))),v=accessor(values,5126,dim,34962);samplers.push({input:ti,output:v,interpolation:'LINEAR'});channels.push({sampler:samplers.length-1,target:{node,path}})}}if(channels.length)model.animations=[{name:'Spatial Sketch Timeline',channels,samplers}] }
+for(let o of project.objects){if(!o.mesh||(!o.visible&&!project.animations?.tracks?.[o.id]?.length))continue;let m=o.mesh;if(!m.indices.length)continue;let mat=o.mat||MAT.paint,indices=new Uint32Array(m.indices),pos=new Float32Array(m.positions),norm=new Float32Array(m.normals),uv=new Float32Array(m.uvs),pi=accessor(pos,5126,'VEC3',34962),ni=accessor(norm,5126,'VEC3',34962),ui=accessor(uv,5126,'VEC2',34962),ii=accessor(indices,5125,'SCALAR',34963);let material={name:o.name+' / PBR',pbrMetallicRoughness:{baseColorFactor:[...rgb(mat.color),mat.alpha],metallicFactor:mat.metal,roughnessFactor:mat.rough},doubleSided:true,alphaMode:mat.alpha<.999?'BLEND':'OPAQUE',emissiveFactor:rgb(mat.color).map(v=>Math.min(1,v*mat.emit))};if(o.bake?.maps?.albedo){model.images??=[];model.textures??=[];let addPNG=(src)=>{let raw=atob(src.substring(src.indexOf(',')+1)),bytes=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)bytes[i]=raw.charCodeAt(i);let view=block(bytes);model.images.push({mimeType:'image/png',bufferView:view});model.textures.push({source:model.images.length-1});return model.textures.length-1};material.pbrMetallicRoughness.baseColorFactor=[1,1,1,mat.alpha];material.pbrMetallicRoughness.baseColorTexture={index:addPNG(o.bake.maps.albedo)};if(o.bake.maps.ao)material.occlusionTexture={index:addPNG(o.bake.maps.ao)};material.extras={normalMapSpace:'object-space; not GLTF tangent-space',uvAtlas:'spatial-sketch-triangle-atlas'}}model.materials.push(material);model.meshes.push({name:o.name,primitives:[{attributes:{POSITION:pi,NORMAL:ni,TEXCOORD_0:ui},indices:ii,material:model.materials.length-1,mode:4}]});model.nodes.push({name:o.name,mesh:model.meshes.length-1,translation:(project.animations?.bases?.[o.id]?.pos||o.pos),rotation:eulerQuat(project.animations?.bases?.[o.id]?.rot||o.rot),scale:(project.animations?.bases?.[o.id]?.scale||o.scale),extras:{spatialSketchId:o.id,formcraftId:o.id,sourceSketch:o.source||null}});model.scenes[0].nodes.push(model.nodes.length-1);nodeById[o.id]=model.nodes.length-1}
+// Spatial Sketch 3D v2.3: write valid transform clips with normalized quaternions.
+// Nonlinear easing is sampled at timeline FPS into standard glTF LINEAR channels.
+// glTF core has no visibility, emissive or camera-FOV animation channels.
+let animations=project.animations;if(animations?.tracks){let channels=[],samplers=[],sampleCount=0;
+ for(let[id,raw] of Object.entries(animations.tracks)){
+  let node=nodeById[id],keys=(raw||[]).filter(k=>Number.isFinite(k?.t)).sort((a,b)=>a.t-b.t);
+  if(node===undefined||keys.length<2)continue;
+  let fps=Math.max(1,Math.min(120,Number(animations.fps)||24));
+  let ticks=new Set(keys.map(k=>Math.max(0,k.t)));
+  let begin=keys[0].t,finish=keys[keys.length-1].t;
+  if(animations.interpolation!=='step'||keys.some(k=>k.ease&&k.ease!=='step')){
+   let count=Math.min(7201,Math.ceil((finish-begin)*fps));
+   for(let i=0;i<=count;i++)ticks.add(Math.min(finish,begin+i/fps));
+  }
+  let times=[...ticks].sort((a,b)=>a-b).filter((x,i,arr)=>i===0||x-arr[i-1]>1e-5);
+  if(times.length<2)continue;
+  sampleCount+=times.length;if(sampleCount>170000)throw Error('Too many animation samples for GLB export. Reduce FPS, duration or animated objects.');
+  let poses=times.map(t=>poseAt(keys,t)||keys[0]);
+  let ti=accessor(new Float32Array(times),5126,'SCALAR');
+  model.accessors[ti].min=[times[0]];model.accessors[ti].max=[times[times.length-1]];
+  for(let[field,path] of [['pos','translation'],['rot','rotation'],['scale','scale']]){
+   let dim=path==='rotation'?'VEC4':'VEC3',base=project.animations?.bases?.[id],previousQ=null;
+   let values=[];for(let k of poses){
+    if(path==='rotation'){
+     let q=eulerQuat(k.rot||base?.rot||[0,0,0]);let magnitude=Math.hypot(...q)||1;q=q.map(x=>x/magnitude);
+     if(previousQ&&q.reduce((sum,v,j)=>sum+v*previousQ[j],0)<0)q=q.map(x=>-x);
+     previousQ=q;values.push(...q);
+    }else values.push(...(k[field]||base?.[field]||(field==='scale'?[1,1,1]:[0,0,0])));
+   }
+   let output=accessor(new Float32Array(values),5126,dim);
+   let interpolation=(animations.interpolation==='step'&&keys.every(k=>!k.ease||k.ease==='step'))?'STEP':'LINEAR';
+   samplers.push({input:ti,output,interpolation});channels.push({sampler:samplers.length-1,target:{node,path}});
+  }
+ }
+ if(channels.length)model.animations=[{name:'Spatial Sketch 3D · Transform Timeline',channels,samplers}];
+}
 model.buffers[0].byteLength=length;let jsonBytes=new TextEncoder().encode(JSON.stringify(model)),jp=(4-jsonBytes.length%4)%4,bp=(4-length%4)%4,total=12+8+jsonBytes.length+jp+8+length+bp,buf=new ArrayBuffer(total),dv=new DataView(buf),u8=new Uint8Array(buf);dv.setUint32(0,0x46546c67,true);dv.setUint32(4,2,true);dv.setUint32(8,total,true);dv.setUint32(12,jsonBytes.length+jp,true);dv.setUint32(16,0x4e4f534a,true);u8.set(jsonBytes,20);u8.fill(32,20+jsonBytes.length,20+jsonBytes.length+jp);let off=20+jsonBytes.length+jp;dv.setUint32(off,length+bp,true);dv.setUint32(off+4,0x004e4942,true);off+=8;for(let p of parts){u8.set(p,off);off+=p.length}downloadBlob(new Blob([buf],{type:'model/gltf-binary'}),safeName(project.name)+'.glb')}
 function hexRGB(a){return '#'+a.slice(0,3).map(v=>Math.max(0,Math.min(255,Math.round(v*255))).toString(16).padStart(2,'0')).join('')}
 function quatEuler(q){let [x,y,z,w]=q;return [Math.atan2(2*(w*x+y*z),1-2*(x*x+y*y)),Math.asin(Math.max(-1,Math.min(1,2*(w*y-z*x)))),Math.atan2(2*(w*z+x*y),1-2*(y*y+z*z))].map(deg)}
@@ -1106,6 +1140,597 @@ function drawingChecklist(d){return ['SPATIAL SKETCH 3D / DESIGN DOCUMENTATION R
     getGizmo:k=>computeGizmo(k??activePane),getRingPoints:(i,k=activePane)=>{const g=computeGizmo(k);return g?ringPoints(g,i):[]},getCamera:k=>cams[k??activePane],getDrag:()=>drag,
     setSpace:s=>{space=s;updateButtons();refresh()},hitHandle:(x,y,k=activePane)=>nearestHandle(x,y,k),
     orbit:(dyaw,dpitch,k=activePane)=>{cams[k].yaw+=dyaw;cams[k].pitch=Math.max(-Math.PI/2+.001,Math.min(Math.PI/2-.001,cams[k].pitch+dpitch));refresh()}};
+})();
+
+</script>
+<script id="spatialAnimationV23JS">
+/* Spatial Sketch 3D v2.3 — animation repair layer.
+   Offline native keyframes and real GLB transform animation; no skeletal rigging claims.
+   Loaded after the v2.2 controller so its UI targets are available. */
+(function installAnimationV23(){
+'use strict';
+const el=id=>document.getElementById(id);
+const near=(a,b)=>Math.abs(Number(a)-Number(b))<1e-5;
+const cap=(n,min,max)=>Math.min(max,Math.max(min,Number(n)||0));
+const copied=o=>JSON.parse(JSON.stringify(o));
+const fpsTime=(t,a)=>Math.round(cap(t,0,a.duration)*a.fps)/a.fps;
+const sorted=keys=>(keys||[]).filter(k=>Number.isFinite(k?.t)).sort((a,b)=>a.t-b.t);
+let activeTrack='',currentKey=null,playHandle=0,lastStamp=0,recording=false,recordCancel=null,silent=false;
+let autoKey=false,snapTime=true;
+const oldState=animationState;
+animationState=function(){
+ const a=oldState();a.duration=cap(a.duration||6,.5,120);a.fps=cap(a.fps||24,1,120);
+ a.tracks??={};a.cameraTracks??={};a.bases??={};a.cameraBases??={};
+ if(Array.isArray(a.cameraFrames)&&a.cameraFrames.length&&(!Array.isArray(a.cameraTracks[0])||!a.cameraTracks[0].length))a.cameraTracks[0]=copied(a.cameraFrames);
+ a.interpolation??='smooth';a.speed??=1;a.loop??=true;
+ for(const [id,keys] of Object.entries(a.tracks)){if(!Array.isArray(keys)){delete a.tracks[id];continue}sorted(keys);if(!a.bases[id]&&keys.length){const k=keys[0];a.bases[id]={pos:copied(k.pos||[0,0,0]),rot:copied(k.rot||[0,0,0]),scale:copied(k.scale||[1,1,1]),color:k.color||'#888888',emit:k.emit??0,alpha:k.alpha??1,visible:k.visible!==false}}}
+ a.cameraFrames=a.cameraTracks[0]||[];return a;
+};
+function snapshotObject(o){return {pos:copied(o.pos),rot:copied(o.rot),scale:copied(o.scale),color:o.mat?.color||'#777777',emit:o.mat?.emit??0,alpha:o.mat?.alpha??1,visible:o.visible!==false}}
+function snapshotCamera(c){return{yaw:c.yaw,pitch:c.pitch,distance:c.distance,fov:c.fov,target:copied(c.target),scaleCam:c.scale,kind:c.kind}}
+function setObject(o,k){if(!k)return;for(const f of ['pos','rot','scale'])if(Array.isArray(k[f]))o[f]=k[f].slice();if(!o.mat)o.mat=copied(MAT.paint);if(k.color)o.mat.color=k.color;if(Number.isFinite(k.emit))o.mat.emit=k.emit;if(Number.isFinite(k.alpha))o.mat.alpha=k.alpha;if(k.visible!==undefined)o.visible=k.visible}
+function setCamera(c,k){if(!k)return;for(const f of ['yaw','pitch','distance','fov'])if(Number.isFinite(k[f]))c[f]=k[f];if(Array.isArray(k.target))c.target=k.target.slice();if(Number.isFinite(k.scaleCam))c.scale=k.scaleCam;if(k.kind)c.kind=k.kind}
+function quatSL(a,b,t){let dot=a.reduce((s,v,i)=>s+v*b[i],0),bb=b.slice();if(dot<0){dot=-dot;bb=bb.map(v=>-v)}if(dot>.9995){let x=a.map((v,i)=>v+(bb[i]-v)*t);let n=Math.hypot(...x)||1;return x.map(v=>v/n)}dot=Math.min(1,Math.max(-1,dot));const theta=Math.acos(dot),s=Math.sin(theta),a1=Math.sin((1-t)*theta)/s,b1=Math.sin(t*theta)/s;return a.map((v,i)=>v*a1+bb[i]*b1)}
+function mixAngle(a,b,u){const tw=Math.PI*2,d=((b-a+Math.PI)%tw+tw)%tw-Math.PI;return a+d*u}
+function sampleKeys(keys,time,fallback='smooth'){
+ const arr=sorted(keys);if(!arr.length)return null;
+ if(time<=arr[0].t)return copied(arr[0]);if(time>=arr[arr.length-1].t)return copied(arr[arr.length-1]);
+ let i=1;while(i<arr.length&&arr[i].t<time)i++;
+ const a=arr[i-1],b=arr[i],raw=(time-a.t)/Math.max(1e-9,b.t-a.t),mode=a.ease||fallback;
+ let u=mode==='step'?0:mode==='smooth'?raw*raw*(3-2*raw):raw;
+ const out=copied(a);
+ for(const f of ['pos','scale','target'])if(Array.isArray(a[f])&&Array.isArray(b[f]))out[f]=a[f].map((v,j)=>v+(b[f][j]-v)*u);
+ if(Array.isArray(a.rot)&&Array.isArray(b.rot))out.rot=quatEuler(quatSL(eulerQuat(a.rot),eulerQuat(b.rot),u));
+ for(const f of ['pitch','distance','fov','scaleCam','emit','alpha'])if(Number.isFinite(a[f])&&Number.isFinite(b[f]))out[f]=a[f]+(b[f]-a[f])*u;
+ if(Number.isFinite(a.yaw)&&Number.isFinite(b.yaw))out.yaw=mixAngle(a.yaw,b.yaw,u);
+ if(a.color&&b.color)out.color=hexColor(V.mix(rgb(a.color),rgb(b.color),u));
+ out.visible=a.visible;out.kind=a.kind||b.kind;
+ return out;
+}
+const oldPose=poseAt;
+poseAt=function(keys,time){return sampleKeys(keys,time,animationState().interpolation)};
+function resolvedTrack(){const a=animationState();if(activeTrack==='camera:0'||activeTrack.startsWith('camera:'))return{type:'camera',idx:cap(Number(activeTrack.slice(7)),0,3),id:activeTrack};
+ const id=activeTrack.startsWith('object:')?activeTrack.slice(7):selected;
+ return {type:'object',id,object:project.objects.find(o=>o.id===id),track:'object:'+id};
+}
+function getKeys(spec,create=false){const a=animationState();if(spec.type==='camera'){if(create)a.cameraTracks[spec.idx]??=[];return a.cameraTracks[spec.idx]||[]};if(!spec.object)return[];if(create)a.tracks[spec.id]??=[];return a.tracks[spec.id]||[]}
+function addAt(keys,k){const ix=keys.findIndex(p=>near(p.t,k.t));if(ix>=0)keys[ix]=k;else keys.push(k);sorted(keys)}
+function frameTime(t){const a=animationState();return snapTime?fpsTime(t,a):cap(t,0,a.duration)}
+function recordObject(o,write=true){if(!o)return false;const a=animationState();a.bases[o.id]??=snapshotObject(o);const keys=a.tracks[o.id]??=[],k={...snapshotObject(o),t:Number(frameTime(timelineTime).toFixed(5)),ease:a.interpolation};addAt(keys,k);activeTrack='object:'+o.id;currentKey=k.t;if(write)commit('Recorded object keyframe at '+k.t.toFixed(2)+'s');else refresh();return true}
+function recordCamera(idx,write=true){const a=animationState(),c=cams[idx];if(!c)return false;a.cameraBases[idx]??=snapshotCamera(c);const keys=a.cameraTracks[idx]??=[],k={...snapshotCamera(c),t:Number(frameTime(timelineTime).toFixed(5)),ease:a.interpolation};addAt(keys,k);a.cameraFrames=a.cameraTracks[0]||[];activeTrack='camera:'+idx;currentKey=k.t;if(write)commit('Recorded camera '+(idx+1)+' keyframe at '+k.t.toFixed(2)+'s');return true}
+keyNow=function(){if(!getObj())return showToast('Select an object before recording its pose.');recordObject(getObj())};
+keyCameraNow=function(){recordCamera(activePane)};
+seekTimeline=function(t){
+ const a=animationState();timelineTime=cap(t,0,a.duration);
+ for(const [id,keys] of Object.entries(a.tracks)){const o=project.objects.find(o=>o.id===id),k=sampleKeys(keys,timelineTime,a.interpolation);if(o&&k)setObject(o,k)}
+ for(const [idx,keys] of Object.entries(a.cameraTracks)){const c=cams[Number(idx)],k=sampleKeys(keys,timelineTime,a.interpolation);if(c&&k)setCamera(c,k)}
+ if(el('timelineScrub'))el('timelineScrub').value=timelineTime;
+ if(el('timelineCurrent'))el('timelineCurrent').textContent=timelineTime.toFixed(2)+'s';
+ if(el('animTimeInput')&&document.activeElement!==el('animTimeInput'))el('animTimeInput').value=timelineTime.toFixed(3);
+ if(el('viewSelect'))el('viewSelect').value=cams[activePane]?.kind||'perspective';
+ // Update visible numeric fields without rebuilding the active timeline DOM each animation frame.
+ const o=getObj();if(o)document.querySelectorAll('[data-vec]').forEach(f=>{if(document.activeElement!==f){const value=o[f.dataset.vec]?.[Number(f.dataset.axis)];if(Number.isFinite(value))f.value=+value.toFixed(4)}});
+ refresh();return timelineTime;
+};
+function pause(){timelinePlaying=false;timelineFrame++;cancelAnimationFrame(playHandle);if(el('timelinePlay'))el('timelinePlay').textContent='▶ Play'}
+startTimeline=function(){
+ if(timelinePlaying){pause();return}
+ const a=animationState();if(!Object.values(a.tracks).some(k=>k.length)&&!Object.values(a.cameraTracks).some(k=>k.length))return showToast('Add an object or camera keyframe to play.');
+ if(timelineTime>=a.duration-.0001)seekTimeline(0);
+ timelinePlaying=true;timelineFrame++;const token=timelineFrame;lastStamp=performance.now();if(el('timelinePlay'))el('timelinePlay').textContent='Ⅱ Pause';
+ const step=t=>{if(!timelinePlaying||token!==timelineFrame)return;const delta=Math.max(0,Math.min(.15,(t-lastStamp)/1000))*cap(a.speed,.1,4);lastStamp=t;
+ let next=timelineTime+delta;if(next>=a.duration){if(a.loop){next=next%a.duration}else{seekTimeline(a.duration);pause();updateTimelineUI();return}};
+ seekTimeline(next);playHandle=requestAnimationFrame(step)};
+ playHandle=requestAnimationFrame(step)
+};
+resetTimeline=function(){pause();seekTimeline(0);updateTimelineUI()};
+function restoreBase(){pause();const a=animationState();for(const[id,k]of Object.entries(a.bases)){const o=project.objects.find(o=>o.id===id);if(o)setObject(o,k)}for(const[idx,k]of Object.entries(a.cameraBases))if(cams[Number(idx)])setCamera(cams[Number(idx)],k);timelineTime=0;updateTimelineUI();refresh();showToast('Restored original scene pose (non-destructive)')}
+removeKey=function(){const spec=resolvedTrack(),keys=getKeys(spec);if(!keys.length)return showToast('No keys in selected track');const target=currentKey??timelineTime;const ix=keys.findIndex(k=>Math.abs(k.t-target)<Math.max(.03,1/animationState().fps*.55));if(ix<0)return showToast('Choose a keyframe marker first');keys.splice(ix,1);currentKey=null;if(spec.type==='object'&&!keys.length)delete animationState().tracks[spec.id];if(spec.type==='camera')animationState().cameraFrames=animationState().cameraTracks[0]||[];commit('Deleted keyframe');updateTimelineUI();seekTimeline(timelineTime)};
+function retimeKey(){const spec=resolvedTrack(),keys=getKeys(spec),idx=keys.findIndex(k=>near(k.t,currentKey));if(idx<0)return showToast('Click a keyframe to retime it');const n=Number(el('animKeyTime').value);if(!Number.isFinite(n))return showToast('Enter a valid new keyframe time');const next=frameTime(n);if(keys.some((k,j)=>j!==idx&&near(k.t,next)))return showToast('Another key already exists at that time');keys[idx].t=next;sorted(keys);currentKey=next;commit('Moved keyframe');seekTimeline(next);updateTimelineUI()}
+function trackOptions(){let options=[];for(const o of project.objects)options.push({value:'object:'+o.id,label:'◆ '+o.name});for(let i=0;i<cams.length;i++)options.push({value:'camera:'+i,label:'◈ Camera · pane '+(i+1)});return options}
+function renderTracks(){const a=animationState(),options=trackOptions(),selector=el('animTrackSelect'),desired=activeTrack||((getObj()&&'object:'+getObj().id)||'camera:0');const selectedExists=options.some(o=>o.value===desired);activeTrack=selectedExists?desired:'camera:0';if(selector){let key=options.map(o=>o.value).join('|');if(selector.dataset.list!==key){selector.innerHTML='';for(const option of options){const dom=document.createElement('option');dom.value=option.value;dom.textContent=option.label;selector.add(dom)}selector.dataset.list=key;}selector.value=activeTrack}
+ const spec=resolvedTrack(),keys=getKeys(spec),all=[];
+ for(const o of project.objects){const list=a.tracks[o.id];if(list?.length)all.push({id:'object:'+o.id,name:o.name,keys:list})}
+ for(const[id,list]of Object.entries(a.cameraTracks))if(list?.length)all.push({id:'camera:'+id,name:'Camera '+(Number(id)+1),keys:list});
+ const body=el('animTrackRows');if(!body)return;body.innerHTML='';for(const row of all){const wrap=document.createElement('div');wrap.className='animTrackRow'+(row.id===activeTrack?' chosen':'');const title=document.createElement('button');title.className='animRowName';title.textContent=row.name;title.title='Select animation track';title.onclick=()=>{activeTrack=row.id;currentKey=null;if(row.id.startsWith('object:'))selectObject(row.id.slice(7));updateTimelineUI()};wrap.append(title);const lane=document.createElement('div');lane.className='animLane';for(const k of row.keys){const b=document.createElement('button');b.className='animMarker'+(row.id===activeTrack&&near(k.t,currentKey)?' picked':'');b.style.left=(100*k.t/Math.max(.5,a.duration))+'%';b.title=row.name+' · '+k.t.toFixed(3)+'s';b.setAttribute('aria-label',b.title);b.onclick=()=>{activeTrack=row.id;currentKey=k.t;if(row.id.startsWith('object:'))selectObject(row.id.slice(7));seekTimeline(k.t);updateTimelineUI()};lane.append(b)}wrap.append(lane);body.append(wrap)}
+}
+updateTimelineUI=function(){
+ const a=animationState();if(!el('timelineScrub'))return;
+ el('timelineScrub').max=a.duration;el('timelineScrub').step=1/a.fps;el('timelineScrub').value=timelineTime;
+ if(document.activeElement!==el('timelineDuration'))el('timelineDuration').value=a.duration;
+ if(document.activeElement!==el('timelineFPS'))el('timelineFPS').value=a.fps;
+ el('timelineEnd').textContent=a.duration.toFixed(2)+'s';el('timelineCurrent').textContent=timelineTime.toFixed(2)+'s';
+ el('timelineLoop').checked=a.loop;
+ for(const[id,val] of [['animInterp',a.interpolation],['animSpeed',String(a.speed)]])if(el(id))el(id).value=val;
+ if(el('animSnap'))el('animSnap').checked=snapTime;if(el('animAuto'))el('animAuto').checked=autoKey;
+ if(el('animTimeInput')&&document.activeElement!==el('animTimeInput'))el('animTimeInput').value=timelineTime.toFixed(3);
+ renderTracks();const spec=resolvedTrack(),keys=getKeys(spec);
+ el('timelineKeys').innerHTML='';for(const k of keys){const b=document.createElement('button');b.className=near(k.t,currentKey)?'active':'';b.textContent=k.t.toFixed(2)+'s';b.onclick=()=>{currentKey=k.t;seekTimeline(k.t);updateTimelineUI()};el('timelineKeys').append(b)}
+ if(!keys.length)el('timelineKeys').textContent='No keyframes on selected track';
+ if(el('animKeyTime')&&document.activeElement!==el('animKeyTime'))el('animKeyTime').value=(currentKey??timelineTime).toFixed(3);
+ const count=Object.values(a.tracks).reduce((sum,k)=>sum+k.length,0)+Object.values(a.cameraTracks).reduce((sum,k)=>sum+k.length,0);
+ el('timelineSummary').textContent=count+' keys / '+Object.values(a.tracks).filter(k=>k.length).length+' objects / '+Object.values(a.cameraTracks).filter(k=>k.length).length+' cameras';
+};
+// Keep editable native files free of transient timeline-preview transforms and views.
+const previousSerialize=serialize;
+serialize=function(){const raw=JSON.parse(previousSerialize()),a=animationState();for(const o of raw.objects){const pose=a.bases[o.id];if(!pose||!a.tracks[o.id]?.length)continue;for(const f of ['pos','rot','scale'])if(pose[f])o[f]=copied(pose[f]);if(o.mat)for(const [f,original] of [['color','color'],['emit','emit'],['alpha','alpha']])if(pose[original]!==undefined)o.mat[f]=pose[original];if(pose.visible!==undefined)o.visible=pose.visible}
+ if(Array.isArray(raw.views))for(const[id,cam]of Object.entries(a.cameraBases))if(raw.views[Number(id)]&&a.cameraTracks[id]?.length)Object.assign(raw.views[Number(id)],copied(cam));
+ raw.animations=copied(a);raw.version=3;raw.application='spatial-sketch-3d';return JSON.stringify(raw)
+};
+const previousLoad=loadProject;
+loadProject=function(data,reset=true){pause();previousLoad(data,reset);animationState();activeTrack='';currentKey=null;timelineTime=0;if(el('animTimeInput'))updateTimelineUI();refresh()};
+const previousRemove=removeSelected;
+removeSelected=function(){const o=getObj();if(o){const a=animationState();for(const target of [o,...project.objects.filter(x=>x.source===o.id)]){delete a.tracks[target.id];delete a.bases[target.id]}}
+ previousRemove();currentKey=null;updateTimelineUI()};
+const previousCommit=commit;
+commit=function(message='Updated'){
+ if(autoKey&&!silent&&!recording&&getObj()&&/moved|rotated|scaled|transform|material|opacity|color|mirrored|visibility/i.test(String(message))) {silent=true;recordObject(getObj(),false);silent=false}
+ previousCommit(message);if(el('animTrackSelect'))updateTimelineUI()
+};
+const previousSelect=selectObject;
+selectObject=function(id){previousSelect(id);if(id)activeTrack='object:'+id;currentKey=null;updateTimelineUI()};
+function applyPreset(){let o=getObj();if(!o)return showToast('Select an object for animation presets');const a=animationState(),kind=el('animPreset').value,t0=0,d=a.duration,origin=snapshotObject(o);a.bases[o.id]??=copied(origin);let frames=[];
+ const pose=(t,extra)=>({t,...copied(origin),ease:a.interpolation,...extra});
+ if(kind==='turntable'){frames=[pose(0,{rot:origin.rot}),pose(d/2,{rot:[origin.rot[0],origin.rot[1],origin.rot[2]+180]}),pose(d,{rot:[origin.rot[0],origin.rot[1],origin.rot[2]+360]})]}
+ if(kind==='bounce'){const h=Math.max(.5,Math.abs(o.scale[2])*.9);frames=[pose(0),pose(d/4,{pos:[origin.pos[0],origin.pos[1],origin.pos[2]+h]}),pose(d/2),pose(3*d/4,{pos:[origin.pos[0],origin.pos[1],origin.pos[2]+h*.45]}),pose(d)]}
+ if(kind==='reveal'){frames=[pose(0,{scale:origin.scale.map(x=>x*.001),visible:true,alpha:0}),pose(d/2,{scale:origin.scale,alpha:origin.alpha}),pose(d)]}
+ if(kind==='pulse'){frames=[pose(0,{emit:0}),pose(d/4,{emit:2}),pose(d/2,{emit:0}),pose(3*d/4,{emit:2}),pose(d,{emit:0})]}
+ if(kind==='slide'){frames=[pose(0,{pos:[origin.pos[0]-3,origin.pos[1],origin.pos[2]]}),pose(d/2),pose(d,{pos:[origin.pos[0]+3,origin.pos[1],origin.pos[2]]})]}
+ if(!frames.length)return;a.tracks[o.id]=frames;activeTrack='object:'+o.id;currentKey=null;seekTimeline(0);commit('Created '+kind+' animation preset');updateTimelineUI()
+}
+function clearTrack(){const spec=resolvedTrack(),keys=getKeys(spec);if(!keys.length)return showToast('Track has no keys');if(!confirm('Delete '+keys.length+' keyframes from this track?'))return;keys.length=0;const a=animationState();if(spec.type==='object')delete a.tracks[spec.id];else a.cameraFrames=a.cameraTracks[0]||[];currentKey=null;commit('Cleared animation track');updateTimelineUI()}
+function exportTracks(){const a=animationState();downloadBlob(new Blob([JSON.stringify({schema:'spatialsketch.animations.v2',project:project.name,animations:a},null,2)],{type:'application/json'}),safeName(project.name)+'_animation_tracks.json')}
+exportTimelineJSON=exportTracks;
+function loadTracksFromJSON(file){file.text().then(text=>{const p=JSON.parse(text),candidate=p.animations||p;if(!candidate||!candidate.tracks||!Number.isFinite(candidate.duration))throw Error('Invalid Spatial Sketch 3D animation file');pause();project.animations=copied(candidate);const a=animationState();let matched=0;for(const id of Object.keys(a.tracks)){if(project.objects.some(o=>o.id===id))matched++;else delete a.tracks[id]};seekTimeline(0);commit('Imported animation tracks');updateTimelineUI();showToast('Loaded '+matched+' object tracks and camera tracks')}).catch(e=>modal('Animation import failed','<p>'+escapeHtml(e.message)+'</p>'))}
+async function exportVideo(){
+ if(recording)return;
+ if(!window.MediaRecorder||!HTMLCanvasElement.prototype.captureStream)return showToast('This browser cannot record canvas WebM video');
+ const mime=['video/webm;codecs=vp9','video/webm;codecs=vp8','video/webm'].find(v=>MediaRecorder.isTypeSupported(v));if(!mime)return showToast('WebM recording unsupported in this browser');
+ const a=animationState(),fps=Math.min(60,a.fps),duration=a.duration;
+ if(!Object.values(a.tracks).some(x=>x.length)&&!Object.values(a.cameraTracks).some(x=>x.length))return showToast('Add animation keyframes before recording');
+ pause();recording=true;let stopped=false;const saveTime=timelineTime,recCanvas=document.createElement('canvas');recCanvas.width=Math.min(1920,canvas.width);recCanvas.height=Math.min(1080,canvas.height);const c=recCanvas.getContext('2d');const s=recCanvas.captureStream(fps),rec=new MediaRecorder(s,{mimeType:mime,videoBitsPerSecond:5000000}),chunks=[];
+ el('animVideo').textContent='■ Stop recording';el('animVideo').disabled=false;
+ const done=()=>{if(stopped)return;stopped=true;recording=false;recordCancel=null;el('animVideo').textContent='● Export WebM';s.getTracks().forEach(t=>t.stop());seekTimeline(saveTime);updateTimelineUI()};
+ rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};
+ rec.onerror=e=>{done();showToast('Video recording failed: '+(e.error?.message||'Recorder error'))};
+ rec.onstop=()=>{const blob=new Blob(chunks,{type:mime});done();if(blob.size)downloadBlob(blob,safeName(project.name)+'_animation.webm');else showToast('No video frames captured')};
+ let start=null,last=-1,raf=0;recordCancel=()=>{if(rec.state==='recording')rec.stop();cancelAnimationFrame(raf)};
+ rec.start(250);
+ const step=t=>{if(rec.state!=='recording')return;if(start===null)start=t;const elapsed=Math.max(0,(t-start)/1000),frame=Math.min(Math.floor(elapsed*fps),Math.round(duration*fps));if(frame!==last){last=frame;seekTimeline(Math.min(duration,frame/fps));drawFrame();try{c.clearRect(0,0,recCanvas.width,recCanvas.height);c.drawImage(canvas,0,0,recCanvas.width,recCanvas.height);c.drawImage(overlay,0,0,recCanvas.width,recCanvas.height)}catch(e){console.warn('Overlay capture unavailable',e)}}
+ if(elapsed>=duration+.12){rec.stop();return}raf=requestAnimationFrame(step)};
+ raf=requestAnimationFrame(step)
+}
+// Timeline UI: track lanes, framed step controls, retime, keyed camera selection, import/export.
+const dock=el('timelineDock');dock.classList.add('animationV23');
+const panel=document.createElement('div');panel.id='animExtra';panel.innerHTML=`<div class="animControls">
+ <label>Track <select id="animTrackSelect" aria-label="Animation track"></select></label>
+ <label>Time <input id="animTimeInput" type="number" min="0" step=".041667" value="0" aria-label="Current timeline time"></label>
+ <button id="animPrev" title="Previous frame">◀ Frame</button><button id="animNext" title="Next frame">Frame ▶</button>
+ <label>Ease <select id="animInterp"><option value="linear">Linear</option><option value="smooth">Smooth</option><option value="step">Stepped</option></select></label>
+ <label>Speed <select id="animSpeed"><option value="0.25">¼×</option><option value="0.5">½×</option><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option></select></label>
+ <label><input type="checkbox" id="animSnap" checked> Frame snap</label><label><input type="checkbox" id="animAuto"> Auto-key edits</label>
+ </div><div class="animControls"><label>Selected key time <input type="number" id="animKeyTime" step="0.041667" min="0" value="0"></label><button id="animRetime">Move key</button><button id="animClear">Clear track</button><button id="animBase">Restore base pose</button>
+ <label>Preset <select id="animPreset"><option value="turntable">Object turntable</option><option value="bounce">Bounce</option><option value="slide">Slide</option><option value="pulse">Emissive pulse</option><option value="reveal">Scale reveal</option></select></label><button id="animApplyPreset">Apply to selected</button>
+ <button id="animVideo" title="Real-time canvas recording, when supported">● Export WebM</button><button id="animImport">Import track JSON</button><input id="animImportFile" type="file" accept=".json,application/json" hidden>
+ </div><div class="animTrackRows" id="animTrackRows" aria-label="Object and camera animation tracks"></div><div class="hint">Move/Rotate/Scale the object at a selected time, then ◆ Add object key. Camera keys use the active viewport. GLB exports object transforms; material, visibility and camera animation stay in native projects.</div>`;
+dock.append(panel);
+const style=document.createElement('style');style.textContent=`
+ #timelineDock.animationV23{max-height:min(57vh,430px);overflow-y:auto;overscroll-behavior:contain}#timelineDock .dockHead{justify-content:center}
+ .animationV23 .animControls{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;margin:7px 0}
+ .animationV23 .animControls label{display:inline-flex;gap:5px;align-items:center;color:var(--muted);font-size:10px}
+ .animationV23 .animControls input[type=number]{width:76px;min-width:0;padding:4px}
+ .animationV23 .animControls input[type=checkbox]{width:15px;flex:0 0 15px}
+ .animationV23 .animControls select{max-width:165px;padding:5px}
+ .animationV23 .animControls button{padding:5px 7px;font-size:10px}
+ .animTrackRows{display:flex;flex-direction:column;gap:3px;margin:8px auto;max-width:100%;max-height:145px;overflow:auto;padding:2px}
+ .animTrackRow{display:grid;grid-template-columns:minmax(100px,190px) minmax(0,1fr);gap:8px;align-items:center;border-radius:6px;padding:3px 5px;background:rgba(120,160,170,.08)}
+ .animTrackRow.chosen{outline:1px solid var(--accent)}.animRowName{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;font-size:10px}
+ .animLane{height:19px;position:relative;border-radius:4px;background:repeating-linear-gradient(to right,transparent 0,transparent 9.5%,#839aa333 10%);min-width:0}
+ .animMarker{position:absolute;top:4px;transform:translateX(-50%) rotate(45deg);height:10px;width:10px;min-width:10px;padding:0;border-radius:2px;background:#e19a4c;border:1px solid #263e44}
+ .animMarker.picked{background:var(--accent);box-shadow:0 0 0 3px #25bbb748}
+ @media(max-width:650px){#timelineDock.animationV23{max-height:60vh}.animTrackRow{grid-template-columns:88px minmax(0,1fr)}.animationV23 .animControls select{max-width:120px}}
+ `;document.head.append(style);
+// Replace callbacks installed by v2.1 — they captured old function behavior.
+el('timelinePlay').onclick=startTimeline;el('timelineStop').onclick=resetTimeline;el('timelineKey').onclick=keyNow;el('timelineCameraKey').onclick=keyCameraNow;el('timelineDeleteKey').onclick=removeKey;
+el('timelineExport').onclick=exportTracks;
+el('timelineScrub').oninput=e=>{pause();seekTimeline(frameTime(Number(e.target.value)));currentKey=null;updateTimelineUI()};
+el('timelineDuration').onchange=e=>{const a=animationState();a.duration=cap(e.target.value,.5,120);if(timelineTime>a.duration)timelineTime=a.duration;pause();commit('Changed animation duration');updateTimelineUI()};
+el('timelineFPS').onchange=e=>{const a=animationState();a.fps=cap(e.target.value,1,120);commit('Changed timeline frame rate');updateTimelineUI()};
+el('timelineLoop').onchange=e=>{animationState().loop=e.target.checked;commit('Changed animation loop mode')};
+el('animTrackSelect').onchange=e=>{activeTrack=e.target.value;currentKey=null;const spec=resolvedTrack();if(spec.type==='object'&&spec.object)selectObject(spec.id);updateTimelineUI()};
+el('animTimeInput').onchange=e=>{pause();seekTimeline(frameTime(Number(e.target.value)));updateTimelineUI()};
+el('animPrev').onclick=()=>{pause();seekTimeline(frameTime(timelineTime-1/animationState().fps));updateTimelineUI()};
+el('animNext').onclick=()=>{pause();seekTimeline(frameTime(timelineTime+1/animationState().fps));updateTimelineUI()};
+el('animInterp').onchange=e=>{const a=animationState();a.interpolation=e.target.value;const spec=resolvedTrack(),keys=getKeys(spec);const chosen=keys.find(k=>near(k.t,currentKey));if(chosen)chosen.ease=e.target.value;commit('Changed animation interpolation');seekTimeline(timelineTime)};
+el('animSpeed').onchange=e=>{animationState().speed=cap(e.target.value,.1,4);commit('Updated playback speed')};
+el('animSnap').onchange=e=>{snapTime=e.target.checked};el('animAuto').onchange=e=>{autoKey=e.target.checked;showToast(autoKey?'Auto-key transform changes enabled':'Auto-key disabled')};
+el('animRetime').onclick=retimeKey;el('animClear').onclick=clearTrack;el('animBase').onclick=restoreBase;el('animApplyPreset').onclick=applyPreset;
+el('animVideo').onclick=()=>{if(recording){recordCancel?.();return}exportVideo().catch(e=>{recording=false;el('animVideo').textContent='● Export WebM';showToast('Recording failed: '+e.message)})};
+el('animImport').onclick=()=>el('animImportFile').click();el('animImportFile').onchange=e=>{const f=e.target.files?.[0];if(f)loadTracksFromJSON(f);e.target.value=''};
+el('timelineToggle').onclick=()=>{dock.classList.toggle('hidden');updateTimelineUI();setTimeout(()=>resizeCanvas(true),0)};
+el('timelineClose').onclick=()=>{dock.classList.add('hidden');pause();resizeCanvas(true)};
+window.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||['INPUT','SELECT','TEXTAREA'].includes(document.activeElement?.tagName))return;
+ if(e.code==='Space'&&!document.body.classList.contains('presentation')){e.preventDefault();startTimeline()}if(e.key==='ArrowLeft'&&e.shiftKey){e.preventDefault();pause();seekTimeline(frameTime(timelineTime-1/animationState().fps))}if(e.key==='ArrowRight'&&e.shiftKey){e.preventDefault();pause();seekTimeline(frameTime(timelineTime+1/animationState().fps))}},true);
+// Native animation demonstration. Built from editable scene objects rather than flattened video.
+function motionDemo(){
+ pause();newProject();project.name='KINETIC-01 | Spatial Animation Study';el('projectName').value=project.name;
+ const objects=[];
+ for(const [shape,name,pos,color] of [
+  ['box','Rotor Housing',[-2,0,1.5],'#399eb5'],
+  ['sphere','Floating Core',[0,0,2],'#ed924e'],
+  ['torus','Energy Ring',[2,0,2],'#48c5a7']]){
+   createPrimitive(shape);const o=getObj();o.name=name;o.pos=pos.slice();o.mat.color=color;objects.push(o);
+ }
+ const a=animationState();a.duration=6;a.fps=30;a.interpolation='smooth';a.speed=1;a.loop=true;
+ objects.forEach((o,i)=>{
+   const rest=snapshotObject(o);a.bases[o.id]=copied(rest);
+   const key=(t,extra={})=>({t,...copied(rest),ease:'smooth',...extra});
+   if(i===0)a.tracks[o.id]=[key(0),key(3,{rot:[0,0,180]}),key(6,{rot:[0,0,360]})];
+   if(i===1)a.tracks[o.id]=[key(0),key(1.5,{pos:[0,0,3.25],emit:1.6}),key(3),key(4.5,{pos:[0,0,3.25],emit:1.6}),key(6)];
+   if(i===2)a.tracks[o.id]=[key(0,{scale:[.25,.25,.25],emit:0}),key(1.5,{scale:[1.2,1.2,1.2],emit:1}),key(3,{scale:[.25,.25,.25],emit:0}),key(4.5,{scale:[1.2,1.2,1.2],emit:1}),key(6,{scale:[.25,.25,.25],emit:0})];
+ });
+ frameScene(false);a.cameraBases[0]=snapshotCamera(cams[0]);
+ const first=snapshotCamera(cams[0]);a.cameraTracks[0]=[{t:0,...copied(first),ease:'smooth'},{t:3,...copied(first),yaw:first.yaw+Math.PI/5,ease:'smooth'},{t:6,...copied(first),ease:'smooth'}];a.cameraFrames=a.cameraTracks[0];
+ selectObject(objects[0].id);timelineTime=0;seekTimeline(0);commit('Loaded KINETIC-01 editable animation demo');el('launch').classList.add('hidden');el('timelineDock').classList.remove('hidden');updateTimelineUI();
+}
+const motionLaunch=document.createElement('button');motionLaunch.textContent='◷ Animation';motionLaunch.title='Open editable keyframe animation demo';el('launch').querySelector('.demoList')?.append(motionLaunch);motionLaunch.onclick=motionDemo;
+const motionSidebar=document.createElement('button');motionSidebar.textContent='Motion';motionSidebar.title='Open editable animation demo';document.querySelector('#toolSidebar [data-demo="environment"]')?.parentElement?.append(motionSidebar);motionSidebar.onclick=motionDemo;
+// Embedded HTML presentation can play its native animation even with the authoring timeline hidden.
+if(document.body.classList.contains('presentation')){const p=document.createElement('div');p.id='animPresentation';p.style.cssText='position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#122c36e8;color:#fff;z-index:500;padding:8px;border-radius:10px;display:flex;gap:8px;align-items:center;max-width:90vw';p.innerHTML='<button id="animPresentationPlay">▶ Play</button><button id="animPresentationStop">■ Stop</button><input id="animPresentationScrub" type="range" style="width:min(30vw,220px)" min="0" max="6" step=".01"><span id="animPresentationTime">0.0s</span>';document.body.append(p);el('animPresentationPlay').onclick=startTimeline;el('animPresentationStop').onclick=resetTimeline;el('animPresentationScrub').max=animationState().duration;el('animPresentationScrub').oninput=e=>{pause();seekTimeline(e.target.value)};const oldSeek=seekTimeline;seekTimeline=function(t){oldSeek(t);el('animPresentationScrub').value=timelineTime;el('animPresentationTime').textContent=timelineTime.toFixed(1)+'s';el('animPresentationPlay').textContent=timelinePlaying?'Ⅱ Pause':'▶ Play'};}
+updateTimelineUI();
+window.SPATIAL_ANIMATION_TEST={state:animationState,poseAt:sampleKeys,seek:seekTimeline,recordObject,recordCamera,getKeys,selectedTrack:()=>activeTrack,setTrack:t=>{activeTrack=t;updateTimelineUI()},pause,play:startTimeline,stop:resetTimeline,restore:restoreBase,applyPreset:kind=>{el('animPreset').value=kind;applyPreset()},getTime:()=>timelineTime,setSnap:s=>{snapTime=s},setEase:m=>{animationState().interpolation=m;updateTimelineUI()},setDuration:d=>{animationState().duration=d;updateTimelineUI()}};
+})();
+
+</script>
+<script id="spatialMotionV24JS">
+/* SPATIAL SKETCH 3D v2.4 - articulated envelope rigging, IK, NLA composition and deterministic contact dynamics.
+   All motion is native and editable. This is an interactive character/assembly rig and lightweight rigid-body solver,
+   not anatomical inference or an engineering-certified physics solver. */
+(function installMotionStudio24(){
+'use strict';
+const $m=id=>document.getElementById(id), deep=o=>JSON.parse(JSON.stringify(o));
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,Number(x)||0));
+const a3=(a,b)=>[a[0]+b[0],a[1]+b[1],a[2]+b[2]],s3=(a,b)=>[a[0]-b[0],a[1]-b[1],a[2]-b[2]],m3=(a,v)=>a.map(q=>q*v);
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2],cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],len=a=>Math.hypot(...a),unit=a=>m3(a,1/(len(a)||1));
+const qnorm=q=>m3(q,1/(Math.hypot(...q)||1)),qmul=(a,b)=>qnorm([
+ a[3]*b[0]+a[0]*b[3]+a[1]*b[2]-a[2]*b[1],
+ a[3]*b[1]-a[0]*b[2]+a[1]*b[3]+a[2]*b[0],
+ a[3]*b[2]+a[0]*b[1]-a[1]*b[0]+a[2]*b[3],
+ a[3]*b[3]-a[0]*b[0]-a[1]*b[1]-a[2]*b[2]]);
+const qinv=q=>[-q[0],-q[1],-q[2],q[3]];
+function qrot(q,v){const t=m3(cross(q.slice(0,3),v),2);return a3(v,a3(m3(t,q[3]),cross(q.slice(0,3),t)))}
+function qfrom(a,b){a=unit(a);b=unit(b);let d=dot(a,b);if(d<-.999999){let axis=unit(cross(a,Math.abs(a[0])<.8?[1,0,0]:[0,1,0]));return [...axis,0]};return qnorm([...cross(a,b),1+d])}
+function eulerFromQuat(q){const[x,y,z,w]=qnorm(q);const sinr=2*(w*x+y*z),cosr=1-2*(x*x+y*y),r=Math.atan2(sinr,cosr),s=Math.max(-1,Math.min(1,2*(w*y-z*x))),p=Math.asin(s),sinz=2*(w*z+x*y),cosz=1-2*(y*y+z*z);return [r,p,Math.atan2(sinz,cosz)].map(n=>n*180/Math.PI)}
+function getMotion(){const a=animationState();a.rigTracks??={};a.ikTracks??={};a.nla??={layers:[]};a.nla.layers??=[];a.nla.bases??={};a.physics??={enabled:false,gravity:-9.81,ground:0,substeps:1};return a}
+let chosenBone=0,rigEdit=true,chosenLayer='',physicsCache={time:-1,states:{}},inSkin=false,skipDrawOverlay=false;
+function selectRig(){const o=getObj();return o?.rig&&o.mesh?o:null}
+function boundsOf(mesh){const n=mesh.positions.length/3,min=[Infinity,Infinity,Infinity],max=[-Infinity,-Infinity,-Infinity];for(let i=0;i<n;i++)for(let j=0;j<3;j++){const v=mesh.positions[i*3+j];min[j]=Math.min(min[j],v);max[j]=Math.max(max[j],v)}return{min,max,mid:min.map((x,j)=>(x+max[j])/2),size:min.map((x,j)=>Math.max(.02,max[j]-x))}}
+function templateBones(type,b){
+ const c=b.mid,[sx,sy,sz]=b.size;let bones=[];
+ function bone(name,parent,head,tail){const k=bones.length;bones.push({name,parent,head,tail,rot:[0,0,0]});return k}
+ const x=u=>c[0]+u*sx,y=u=>c[1]+u*sy,z=u=>b.min[2]+u*sz;
+ if(type==='chain'){let n=bone('Root',-1,[x(0),y(0),z(.1)],[x(0),y(0),z(.4)]);n=bone('Middle',n,[x(0),y(0),z(.4)],[x(0),y(0),z(.7)]);bone('Tip',n,[x(0),y(0),z(.7)],[x(0),y(0),z(.98)]);return bones}
+ const root=bone('Pelvis',-1,[x(0),y(0),z(.48)],[x(0),y(0),z(.60)]),sp=bone('Spine',root,[x(0),y(0),z(.60)],[x(0),y(0),z(.82)]);
+ bone('Neck',sp,[x(0),y(0),z(.82)],[x(0),y(0),z(.95)]);
+ if(type==='quadruped'){
+  const bd=bone('Back',root,[x(0),y(0),z(.48)],[x(0),y(-.26),z(.56)]);bone('Tail',bd,[x(0),y(-.26),z(.56)],[x(0),y(-.48),z(.62)]);
+  for(const s of [-1,1])for(const side of ['front','rear']){const fy=side==='front'?-.34:.30,j=bone((s<0?'L':'R')+' '+side+' upper',root,[x(s*.29),y(fy),z(.48)],[x(s*.30),y(fy),z(.25)]);bone((s<0?'L':'R')+' '+side+' lower',j,[x(s*.30),y(fy),z(.25)],[x(s*.30),y(fy),z(.01)])}
+ }else {
+  for(const s of [-1,1]){let shoulder=bone((s<0?'L':'R')+' upper arm',sp,[x(s*.21),y(0),z(.78)],[x(s*.36),y(0),z(.64)]);bone((s<0?'L':'R')+' forearm',shoulder,[x(s*.36),y(0),z(.64)],[x(s*.48),y(0),z(.55)]);let thigh=bone((s<0?'L':'R')+' thigh',root,[x(s*.15),y(0),z(.48)],[x(s*.15),y(0),z(.25)]);bone((s<0?'L':'R')+' shin',thigh,[x(s*.15),y(0),z(.25)],[x(s*.15),y(0),z(.02)])}
+ }
+ return bones
+}
+function distToSegment(p,a,b){const d=s3(b,a),ll=dot(d,d)||1,t=clamp(dot(s3(p,a),d)/ll,0,1),v=s3(p,a3(a,m3(d,t)));return len(v)}
+function shellComponents(mesh){const n=mesh.positions.length/3,parent=Array.from({length:n},(_,i)=>i);function find(i){while(parent[i]!==i){parent[i]=parent[parent[i]];i=parent[i]}return i}function join(i,j){const a=find(i),b=find(j);if(a!==b)parent[b]=a}
+ const coord=new Map();for(let i=0;i<n;i++){const key=mesh.positions.slice(i*3,i*3+3).map(x=>Math.round(x*1e5)).join(',');if(coord.has(key))join(i,coord.get(key));else coord.set(key,i)}for(let i=0;i<mesh.indices.length;i+=3){let a=mesh.indices[i],b=mesh.indices[i+1],c=mesh.indices[i+2];join(a,b);join(b,c)}
+ const components=new Map();for(let i=0;i<n;i++){const r=find(i);if(!components.has(r))components.set(r,[]);components.get(r).push(i)}return [...components.values()]
+}
+function autoWeights(mesh,bones,mode){const n=mesh.positions.length/3,weights=Array(n);if(mode==='rigid'){
+  for(const group of shellComponents(mesh)){const center=[0,0,0];for(const i of group)for(let j=0;j<3;j++)center[j]+=mesh.positions[i*3+j]/group.length;
+   let best=0,bd=Infinity;for(let j=0;j<bones.length;j++){let d=distToSegment(center,bones[j].head,bones[j].tail);if(d<bd){bd=d;best=j}}
+   for(const i of group)weights[i]={j:[best,0,0,0],w:[1,0,0,0]};
+  }
+ }else for(let i=0;i<n;i++){const p=mesh.positions.slice(i*3,i*3+3),rank=bones.map((bone,j)=>({j,d:distToSegment(p,bone.head,bone.tail)})).sort((a,b)=>a.d-b.d).slice(0,4),maxSize=Math.max(.01,...bones.map(b=>len(s3(b.tail,b.head))));const terms=rank.map(x=>1/Math.pow(x.d+maxSize*.07,2)),sum=terms.reduce((a,b)=>a+b,0);weights[i]={j:rank.map(x=>x.j).concat(Array(4-rank.length).fill(0)),w:terms.map(x=>x/sum).concat(Array(4-rank.length).fill(0))}}
+ return weights
+}
+function rigObject(kind='humanoid',weightMode='smooth'){
+ const o=getObj();if(!o?.mesh)return showToast('Select a mesh object before auto-rigging.');const vertices=o.mesh.positions.length/3;if(vertices>28000)return showToast('Real-time CPU skinning limit: 28,000 vertices. Decimate or split the mesh first.');if(o.rig&&o.rig.restPositions){o.mesh={...o.mesh,positions:o.rig.restPositions.slice()};disposeGpu(o.id)}
+ const base=deep(o.mesh),bones=templateBones(kind,boundsOf(base)),weights=autoWeights(base,bones,weightMode);
+ o.rig={version:1,template:kind,mode:weightMode,bones,weights,restPositions:base.positions.slice(),restNormals:base.normals.slice()};
+ chosenBone=0;getMotion().rigTracks[o.id]??={};commit('Created editable '+kind+' skeletal rig');updateMotionUI();refresh();return o
+}
+function boneTransforms(o){const bones=o.rig.bones,poses=[];for(let i=0;i<bones.length;i++){let b=bones[i],parent=b.parent>=0?poses[b.parent]:null,q=qnorm(eulerQuat(b.rot||[0,0,0]));if(parent)poses.push({head:a3(parent.head,qrot(parent.quat,s3(b.head,bones[b.parent].head))),quat:qmul(parent.quat,q)});else poses.push({head:b.head.slice(),quat:q})}return poses}
+function deformRig(o){if(!o?.rig)return;const r=o.rig,rest=r.restPositions;if(rest.length!==o.mesh.positions.length)return;
+ const poses=boneTransforms(o),out=new Array(rest.length);for(let i=0;i<rest.length/3;i++){const point=rest.slice(i*3,i*3+3),w=r.weights[i],v=[0,0,0];if(!w){out.splice(i*3,3,...point);continue}for(let j=0;j<4;j++){const k=w.j[j],amount=w.w[j];if(amount<1e-6)continue;const q=poses[k],head=r.bones[k].head,posed=a3(q.head,qrot(q.quat,s3(point,head)));for(let d=0;d<3;d++)v[d]+=posed[d]*amount}for(let d=0;d<3;d++)out[i*3+d]=v[d]}
+ const mesh={...o.mesh,positions:out,normals:r.restNormals.slice()};smoothNormals(mesh);o.mesh=mesh;disposeGpu(o.id)
+}
+function solveIK(o,idx,target,count=2,quiet=false){if(!o?.rig)return false;const bones=o.rig.bones;let chain=[],k=idx;while(k>=0&&chain.length<count){chain.unshift(k);k=bones[k].parent}if(!chain.length)return false;
+ const frames=boneTransforms(o),pts=[frames[chain[0]].head.slice()];for(const j of chain)pts.push(a3(frames[j].head,qrot(frames[j].quat,s3(bones[j].tail,bones[j].head))));let lengths=chain.map(j=>len(s3(bones[j].tail,bones[j].head))),base=pts[0].slice(),total=lengths.reduce((a,b)=>a+b,0),goal=target.slice();
+ if(len(s3(goal,base))>=total){let dir=unit(s3(goal,base));for(let i=0;i<chain.length;i++)pts[i+1]=a3(pts[i],m3(dir,lengths[i]))}
+ else for(let iter=0;iter<20;iter++){pts[pts.length-1]=goal.slice();for(let i=chain.length-1;i>=0;i--)pts[i]=a3(pts[i+1],m3(unit(s3(pts[i],pts[i+1])),lengths[i]));pts[0]=base.slice();for(let i=0;i<chain.length;i++)pts[i+1]=a3(pts[i],m3(unit(s3(pts[i+1],pts[i])),lengths[i]));if(len(s3(pts[pts.length-1],goal))<.0002)break}
+ for(let i=0;i<chain.length;i++){const j=chain[i],current=boneTransforms(o),q=current[j].quat,actual=qrot(q,s3(bones[j].tail,bones[j].head)),desired=s3(pts[i+1],pts[i]),global=qmul(qfrom(actual,desired),q),parent=bones[j].parent,local=parent<0?global:qmul(qinv(current[parent].quat),global);bones[j].rot=eulerFromQuat(local)}
+ if(!quiet){deformRig(o);refresh()}return true
+}
+function getRigTrack(o,idx,create=true){const a=getMotion();if(create)a.rigTracks[o.id]??={};if(create)a.rigTracks[o.id][idx]??=[];return a.rigTracks[o.id]?.[idx]||[]}
+function keyBone(){const o=selectRig();if(!o)return showToast('Select a rigged mesh');const a=getMotion(),idx=clamp(chosenBone,0,o.rig.bones.length-1),t=+(timelineTime).toFixed(4),keys=getRigTrack(o,idx),record={t,rot:o.rig.bones[idx].rot.slice(),ease:a.interpolation};const same=keys.findIndex(k=>Math.abs(k.t-t)<1e-4);if(same>=0)keys[same]=record;else keys.push(record);keys.sort((a,b)=>a.t-b.t);commit('Recorded bone rotation');updateMotionUI()}
+function applyBoneKeys(t){const a=getMotion();for(const o of project.objects){if(!o.rig)continue;for(let j=0;j<o.rig.bones.length;j++){const keys=a.rigTracks[o.id]?.[j];if(keys?.length){const pose=poseAt(keys,t);if(pose?.rot)o.rig.bones[j].rot=pose.rot.slice()}}}}
+function bonePoseAt(o,t){const a=getMotion(),out=o.rig.bones.map(b=>b.rot.slice());for(let j=0;j<out.length;j++){const keys=a.rigTracks[o.id]?.[j];if(keys?.length){let k=poseAt(keys,t);if(k?.rot)out[j]=k.rot.slice()}}return out}
+function nlaLayerName(layer){return `${layer.name} (${layer.mode} · ${layer.weight.toFixed(2)})`}
+function layerLocalTime(layer,t,a){const duration=Math.max(.001,layer.end-layer.start);if(t<layer.start||t>layer.end)return null;let v=(t-layer.start)*layer.speed+layer.offset;const length=Math.max(.001,layer.clipEnd-layer.clipStart);if(layer.loop)v=((v%length)+length)%length;else v=clamp(v,0,length);return layer.clipStart+v}
+function blending(base,sampled,reference,weight,mode){const output=deep(base);const fields=['pos','rot','scale','color','emit','alpha'];for(const f of fields){const x=sampled[f],b=base[f],r=reference?.[f];if(x===undefined||b===undefined)continue;
+  if(Array.isArray(x)&&Array.isArray(b))output[f]=b.map((v,j)=>mode==='add'?v+((x[j]||0)-(r?.[j]||0))*weight:v+(x[j]-v)*weight);
+  else if(typeof x==='number'&&typeof b==='number')output[f]=mode==='add'?b+(x-(r||0))*weight:b+(x-b)*weight;
+  else if(f==='color'&&typeof x==='string'&&typeof b==='string'&&mode!=='add')output[f]=hexColor(V.mix(rgb(b),rgb(x),weight));
+ }if(weight>.5&&sampled.visible!==undefined)output.visible=sampled.visible;return output}
+function applyNLA(t){const a=getMotion(),layers=a.nla.layers.filter(l=>!l.mute),solo=layers.some(l=>l.solo),active=solo?layers.filter(l=>l.solo):layers;
+ for(const l of active){const local=layerLocalTime(l,t,a);if(local==null)continue;const w=clamp(l.weight,0,1);if(!w)continue;
+  for(const [id,keys]of Object.entries(l.tracks||{})){const o=project.objects.find(o=>o.id===id),sample=poseAt(keys,local);if(!o||!sample)continue;const base={pos:o.pos,rot:o.rot,scale:o.scale,color:o.mat.color,emit:o.mat.emit,alpha:o.mat.alpha,visible:o.visible},reference=keys.length?keys[0]:base,blend=blending(base,sample,reference,w,l.mode);o.pos=blend.pos;o.rot=blend.rot;o.scale=blend.scale;o.visible=blend.visible;if(blend.color)o.mat.color=blend.color;if(Number.isFinite(blend.emit))o.mat.emit=blend.emit;if(Number.isFinite(blend.alpha))o.mat.alpha=blend.alpha}
+  for(const [id,tracks]of Object.entries(l.boneTracks||{})){const o=project.objects.find(o=>o.id===id);if(!o?.rig)continue;for(const [index,keys]of Object.entries(tracks)){const bone=o.rig.bones[+index],sample=poseAt(keys,local);if(!bone||!sample?.rot)continue;const rest=keys[0]?.rot||[0,0,0];bone.rot=bone.rot.map((v,j)=>l.mode==='add'?v+(sample.rot[j]-rest[j])*w:v+(sample.rot[j]-v)*w)}}
+ }
+}
+function addNlaLayer(){let a=getMotion(),o=getObj();if(!o)return showToast('Select an object to create an NLA clip');const boneTrack=o.rig?a.rigTracks[o.id]:null,objTrack=a.tracks[o.id];if(!objTrack?.length&&!Object.values(boneTrack||{}).some(k=>k.length))return showToast('Record object or bone keyframes first');const num=a.nla.layers.length+1;
+ const layer={id:'nla_'+Date.now().toString(36)+'_'+num,name:'Action '+num,start:0,end:a.duration,clipStart:0,clipEnd:a.duration,offset:0,speed:1,weight:1,mode:'override',loop:true,mute:false,solo:false,tracks:{},boneTracks:{}};
+ if(!a.nla.bases[o.id])a.nla.bases[o.id]={pos:o.pos.slice(),rot:o.rot.slice(),scale:o.scale.slice(),color:o.mat.color,emit:o.mat.emit,alpha:o.mat.alpha,visible:o.visible};if(objTrack?.length)layer.tracks[o.id]=deep(objTrack);if(boneTrack)layer.boneTracks[o.id]=deep(boneTrack);a.nla.layers.push(layer);chosenLayer=layer.id;commit('Added editable NLA action layer');updateMotionUI();return layer
+}
+function selectedLayer(){return getMotion().nla.layers.find(l=>l.id===chosenLayer)}
+// Physics models dynamic bodies as translated AABB volumes with ground and body contact.
+// The fixed-step semi-implicit integrator is deterministic for the same scene and timeline time.
+function physicsBounds(o,pos){const bb=boundsOf(o.rig?{positions:o.rig.restPositions}:o.mesh);const scale=o.scale||[1,1,1];let min=bb.min.map((v,j)=>pos[j]+Math.min(v*scale[j],bb.max[j]*scale[j])),max=bb.max.map((v,j)=>pos[j]+Math.max(v*scale[j],bb.min[j]*scale[j]));return {min,max}}
+function initPhysics(){const objects=project.objects.filter(o=>o.mesh&&o.body?.enabled);return Object.fromEntries(objects.map(o=>[o.id,{pos:(o.body.basePos||o.pos).slice(),vel:(o.body.velocity||[0,0,0]).slice()}]))}
+function physicsStep(states,dt,p){const bodies=project.objects.filter(o=>o.mesh&&o.body?.enabled);const g=clamp(p.gravity,-100,100),ground=clamp(p.ground,-1000,1000);
+ for(const o of bodies){let s=states[o.id];if(!s)continue;const b=o.body;if(b.type==='kinematic'){s.pos=o.pos.slice();s.vel=[0,0,0];continue}s.vel[2]+=g*dt;for(let j=0;j<3;j++)s.pos[j]+=s.vel[j]*dt;let a=physicsBounds(o,s.pos);
+  if(a.min[2]<ground){s.pos[2]+=ground-a.min[2];s.vel[2]=Math.abs(s.vel[2])*clamp(b.bounce,0,1);s.vel[0]*=Math.max(0,1-clamp(b.friction,0,1)*dt*15);s.vel[1]*=Math.max(0,1-clamp(b.friction,0,1)*dt*15);if(Math.abs(s.vel[2])<.04)s.vel[2]=0}
+ }
+ // Pair AABB resolution along minimum penetration axis, impulse along contact normal.
+ for(let i=0;i<bodies.length;i++)for(let j=i+1;j<bodies.length;j++){
+  let a=bodies[i],b=bodies[j],x=states[a.id],y=states[b.id];if(!x||!y)continue;let A=physicsBounds(a,x.pos),B=physicsBounds(b,y.pos),pen=A.min.map((v,k)=>Math.min(A.max[k],B.max[k])-Math.max(v,B.min[k]));if(pen.some(v=>v<=0))continue;
+  const axis=pen.indexOf(Math.min(...pen)),dir=x.pos[axis]<y.pos[axis]?-1:1,im1=a.body.type==='kinematic'?0:1/clamp(a.body.mass,.01,10000),im2=b.body.type==='kinematic'?0:1/clamp(b.body.mass,.01,10000),sum=im1+im2;if(!sum)continue;
+  x.pos[axis]+=dir*(pen[axis]+.0001)*im1/sum;y.pos[axis]-=dir*(pen[axis]+.0001)*im2/sum;
+  let rv=x.vel[axis]-y.vel[axis],closing=rv*dir;if(closing<0){const e=Math.min(clamp(a.body.bounce,0,1),clamp(b.body.bounce,0,1)),imp=-(1+e)*closing/sum;x.vel[axis]+=imp*dir*im1;y.vel[axis]-=imp*dir*im2}
+ }
+}
+function applyPhysics(t){const a=getMotion(),p=a.physics;if(!p.enabled)return;const fixed=1/60;let states=initPhysics(),steps=Math.min(7200,Math.floor(t/fixed));for(let i=0;i<steps;i++)physicsStep(states,fixed,p);const remain=t-steps*fixed;if(remain>1e-6&&steps<7200)physicsStep(states,remain,p);for(const[id,s]of Object.entries(states)){const o=project.objects.find(o=>o.id===id);if(o&&o.body.type!=='kinematic')o.pos=s.pos.slice()}physicsCache={time:t,states}
+}
+function resetAllRigPoses(){for(const o of project.objects)if(o.rig){for(const b of o.rig.bones)b.rot=(b.baseRot||[0,0,0]).slice()}}
+function applyIKMotion(t){const a=getMotion();for(const[id,targets]of Object.entries(a.ikTracks||{})){const o=project.objects.find(o=>o.id===id);if(!o?.rig)continue;
+  for(const [index,clip]of Object.entries(targets)){if(!clip.keys?.length)continue;const k=poseAt(clip.keys,t);if(k?.pos)solveIK(o,Number(index),k.pos,clip.chain||2,true)}
+ }}
+function applyRigMotion(t){resetAllRigPoses();applyBoneKeys(t);applyNLA(t);applyIKMotion(t);for(const o of project.objects)if(o.rig)deformRig(o);applyPhysics(t)}
+const originalSeek=seekTimeline;
+seekTimeline=function(t){
+ // Return unkeyed NLA objects to their action baseline before evaluating layers again;
+ // otherwise additive and partial-weight layers would accumulate at every scrub.
+ const n=getMotion().nla;for(const[id,k]of Object.entries(n.bases)){const o=project.objects.find(x=>x.id===id);if(!o||getMotion().tracks[id]?.length)continue;
+  o.pos=k.pos.slice();o.rot=k.rot.slice();o.scale=k.scale.slice();o.mat.color=k.color;o.mat.emit=k.emit;o.mat.alpha=k.alpha;o.visible=k.visible}
+ originalSeek(t);applyRigMotion(t);updateMotionBrief();refresh();return timelineTime};
+const originalSerialize=serialize;
+serialize=function(){const meshRestore=[];for(const o of project.objects)if(o.rig){meshRestore.push([o,o.mesh]);o.mesh={...o.mesh,positions:o.rig.restPositions.slice(),normals:o.rig.restNormals.slice()}}
+ let raw;try{raw=JSON.parse(originalSerialize())}finally{for(const[o,mesh]of meshRestore)o.mesh=mesh}
+ for(const o of raw.objects)if(o.rig){o.mesh.positions=o.rig.restPositions.slice();o.mesh.normals=o.rig.restNormals.slice();o.rig.bones.forEach(b=>{b.rot=(b.baseRot||[0,0,0]).slice()})}
+ raw.animations=deep(getMotion());raw.version=4;return JSON.stringify(raw)
+};
+const originalLoad=loadProject;
+loadProject=function(data,reset=true){originalLoad(data,reset);const a=getMotion();chosenBone=0;chosenLayer=a.nla.layers[0]?.id||'';for(const o of project.objects)if(o.rig&&o.rig.restPositions){o.mesh.positions=o.rig.restPositions.slice();o.mesh.normals=o.rig.restNormals.slice();for(const b of o.rig.bones)b.baseRot??=[0,0,0]}
+ updateMotionUI();refresh()};
+const originalRemove=removeSelected;
+removeSelected=function(){const o=getObj();if(o){const a=getMotion();delete a.rigTracks[o.id];delete a.ikTracks[o.id];delete a.nla.bases[o.id];for(const l of a.nla.layers){delete l.tracks?.[o.id];delete l.boneTracks?.[o.id]}}
+ originalRemove();updateMotionUI()};
+const originalSelect=selectObject;
+selectObject=function(id){originalSelect(id);chosenBone=0;updateMotionUI()};
+// Draw selectable, view-correct armature overlay using the original projection math.
+const priorOverlay=drawOverlay;
+drawOverlay=function(){priorOverlay();if(!rigEdit)return;const o=selectRig();if(!o)return;const poses=boneTransforms(o),m=matTRS(o);for(let k=0;k<(quadMode?4:1);k++){
+ const rect=paneRect(k);g2.save();g2.beginPath();g2.rect(rect.x,rect.y,rect.w,rect.h);g2.clip();for(let i=0;i<poses.length;i++){
+ const b=o.rig.bones[i],p=screenP(mp(m,poses[i].head),k),tail=screenP(mp(m,a3(poses[i].head,qrot(poses[i].quat,s3(b.tail,b.head)))),k);if(!p||!tail)continue;
+ g2.strokeStyle=i===chosenBone?'#ff9a2f':'#17c0c3';g2.fillStyle=i===chosenBone?'#ff9a2f':'#17c0c3';g2.lineWidth=i===chosenBone?4:2;g2.beginPath();g2.moveTo(...p);g2.lineTo(...tail);g2.stroke();g2.beginPath();g2.arc(p[0],p[1],i===chosenBone?5:3,0,Math.PI*2);g2.fill();if(i===chosenBone){g2.font='bold 12px sans-serif';g2.fillText(b.name,tail[0]+8,tail[1]-8)}
+ }g2.restore()}
+};
+canvas.addEventListener('pointerdown',e=>{if(!rigEdit||!selectRig()||e.button!==0||!e.shiftKey)return;const o=selectRig(),rect=canvas.getBoundingClientRect(),x=(e.clientX-rect.left)*w/Math.max(1,rect.width),y=(e.clientY-rect.top)*h/Math.max(1,rect.height),pane=paneAt(x,y),poses=boneTransforms(o),m=matTRS(o);let nearest=Infinity,target=-1;for(let i=0;i<poses.length;i++){
+ const bone=o.rig.bones[i],a=screenP(mp(m,poses[i].head),pane),b=screenP(mp(m,a3(poses[i].head,qrot(poses[i].quat,s3(bone.tail,bone.head)))),pane);if(!a||!b)continue;const dx=b[0]-a[0],dy=b[1]-a[1],t=clamp(((x-a[0])*dx+(y-a[1])*dy)/(dx*dx+dy*dy||1),0,1),d=Math.hypot(x-a[0]-t*dx,y-a[1]-t*dy);if(d<nearest){nearest=d;target=i}}
+ if(nearest<14&&target>=0){e.preventDefault();e.stopImmediatePropagation();chosenBone=target;updateMotionUI();refresh()}
+},true);
+// UI wiring. One dedicated scrollable inspector is safer than packing another horizontal strip onto the viewport.
+const panel=document.createElement('section');panel.className='motion24';panel.id='motion24';panel.innerHTML=`
+<div class="motion24Head"><strong>✦ MOTION LAB · 2.4</strong><span id="motionState">Ready</span></div>
+<div class="motion24Tab"><button data-mtab="rig" class="active">Skeleton + IK</button><button data-mtab="nla">NLA Layers</button><button data-mtab="physics">Physics</button><button data-mtab="export">Video + GLB</button></div>
+<div class="motion24Body" data-mview="rig">
+ <div class="motionFields"><label>Rig preset<select id="rigTemplate"><option value="humanoid">Humanoid proportions</option><option value="quadruped">Quadruped</option><option value="chain">Articulated chain</option></select></label><label>Bind weights<select id="rigMode"><option value="smooth">Smooth envelopes</option><option value="rigid">Rigid connected shells</option></select></label><button id="rigBuild">Auto-rig selected mesh</button></div>
+ <div class="motionFields"><label>Bone<select id="rigBone"></select></label><label><input type="checkbox" id="rigShow" checked> Show armature</label><label>IK chain<select id="rigChain"><option value="2">2 bones</option><option value="3">3 bones</option></select></label></div>
+ <div class="motionFields"><label>X°<input id="boneRX" type="number" step="5"></label><label>Y°<input id="boneRY" type="number" step="5"></label><label>Z°<input id="boneRZ" type="number" step="5"></label><button id="boneKey">◆ Key bone</button><button id="rigRest">Rest pose</button></div>
+ <div class="motionFields"><label>IK X<input type="number" id="ikX" step="0.1"></label><label>IK Y<input type="number" id="ikY" step="0.1"></label><label>IK Z<input type="number" id="ikZ" step="0.1"></label><button id="rigSolve">Solve IK</button><button id="rigKeyIK">◆ Key IK target</button><button id="rigDeleteIK">Delete IK key</button></div><div id="motionIKKeys" class="motionIKKeys"></div>
+ <p class="motionHelp">Shift-click an armature line to select a bone. Rig templates infer proportional placement from selected mesh bounds, not anatomical landmarks. Bones are editable; mesh skinning is calculated on the CPU.</p>
+</div>
+<div class="motion24Body" data-mview="nla" hidden>
+ <div class="motionFields"><button id="nlaAdd">+ Layer from selected action</button><button id="nlaRemove">Delete selected</button></div><div id="nlaRows"></div><p class="motionHelp">Override/additive mixing of editable object and bone action clips. Solo and mute control evaluation. Clips have independent time offsets, speeds, and loop settings.</p>
+</div>
+<div class="motion24Body" data-mview="physics" hidden>
+ <div class="motionFields"><label><input type="checkbox" id="phyEnabled"> Enable physics</label><label>Gravity Z (m/s²)<input id="phyGravity" type="number" step=".1" value="-9.81"></label><label>Ground Z<input id="phyGround" type="number" step=".1" value="0"></label></div>
+ <div class="motionFields"><label><input type="checkbox" id="phyBody"> Simulate selected object</label><label>Type<select id="phyType"><option value="dynamic">Dynamic</option><option value="kinematic">Kinematic</option></select></label><label>Mass (kg)<input id="phyMass" type="number" min=".01" value="1"></label><label>Bounce<input id="phyBounce" type="number" min="0" max="1" step=".05" value=".2"></label><label>Friction<input id="phyFriction" type="number" min="0" max="1" step=".05" value=".6"></label></div>
+ <div class="motionFields"><label>Velocity X<input id="phyVX" type="number" value="0" step=".5"></label><label>Velocity Y<input id="phyVY" type="number" value="0" step=".5"></label><label>Velocity Z<input id="phyVZ" type="number" value="0" step=".5"></label><button id="phyReset">Set initial pose</button></div>
+ <p class="motionHelp">Deterministic fixed-step AABB contact physics: gravity, mass, restitution, friction, ground contacts and box-box collision. No rotational inertia, joint forces, cloth, fluids or collision-mesh certification.</p>
+</div>
+<div class="motion24Body" data-mview="export" hidden>
+ <div class="motionFields"><button id="rigGLBExport">Export skinned GLB</button><label>Video size<select id="mp4Size"><option value="640">640 × 360</option><option value="960">960 × 540</option><option value="1280">1280 × 720</option></select></label><label>FPS<select id="mp4FPS"><option>24</option><option>30</option></select></label><button id="mp4Export">Export MP4 (H.264)</button></div>
+ <div id="mp4Status" class="motionHelp">MP4 requires H.264 in MediaRecorder or WebCodecs. WebM remains available in the main timeline. No network encoder is used.</div>
+</div>`;
+const timeline=$m('timelineDock');timeline?.append(panel);
+const css=document.createElement('style');css.textContent=`
+#timelineDock.animationV23{max-height:min(48vh,480px);overflow:auto;overscroll-behavior:contain} .motion24{border-top:1px solid var(--line);margin-top:10px;padding-top:9px;color:var(--text)}
+.motion24Head{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:11px;margin:3px 0 7px}.motion24Head span{color:var(--muted);font-weight:400}
+.motion24Tab{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;padding-bottom:6px}.motion24Tab button{padding:6px 9px;font-size:10px}.motion24Tab button.active{background:var(--accent);color:#063238;font-weight:800}
+.motion24Body{padding:7px;max-height:min(27vh,230px);overflow:auto;border:1px solid var(--line);border-radius:8px}.motion24Body[hidden]{display:none!important}
+.motionFields{display:flex;flex-wrap:wrap;justify-content:center;align-items:end;gap:6px;margin:5px 0}.motionFields label{display:flex;gap:4px;flex-direction:column;font-size:10px;min-width:60px;color:var(--muted)}.motionFields label:has(input[type=checkbox]){flex-direction:row;align-items:center}
+.motionFields input:not([type=checkbox]),.motionFields select{width:105px;max-width:150px;padding:5px;font-size:11px;min-width:0}.motionFields input[type=checkbox]{width:16px}.motionFields button{padding:6px 9px;font-size:10px;min-height:30px}
+.motionIKKeys{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin:5px}.motionIKKeys button{font-size:10px;padding:4px 6px}.motionIKKeys button.active{background:var(--accent);color:#073339}
+.motionHelp{font-size:10px;color:var(--muted);line-height:1.4;margin:8px 2px 3px}.nlaLayer{padding:7px;margin:6px 0;border:1px solid var(--line);border-radius:7px;background:#7d9c9e10}.nlaLayer.selected{border-color:var(--accent)}
+.nlaLayerTop{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-bottom:6px}.nlaLayerTop input{max-width:180px;min-width:85px;flex:1}.nlaLayer .motionFields input{width:70px}.nlaLayer button{font-size:10px}
+@media(max-width:520px){#timelineDock.animationV23{max-height:46vh}.motion24Body{max-height:22vh}.motionFields input:not([type=checkbox]),.motionFields select{width:78px}.motion24Tab button{padding:6px}}
+`;document.head.append(css);
+function updateMotionBrief(){const o=selectRig(),a=getMotion();if($m('motionState'))$m('motionState').textContent=`${project.objects.filter(x=>x.rig).length} rigs · ${a.nla.layers.length} NLA · ${a.physics.enabled?'physics ON':'physics OFF'}`}
+function updateMotionUI(){if(!$m('motion24'))return;const o=selectRig(),bone=o?.rig.bones[chosenBone];const drop=$m('rigBone');drop.innerHTML='';for(let i=0;i<(o?.rig.bones.length||0);i++){let opt=document.createElement('option');opt.value=i;opt.textContent=i+' · '+o.rig.bones[i].name;drop.add(opt)}drop.value=chosenBone;
+ for(let i=0;i<3;i++){const f=$m(['boneRX','boneRY','boneRZ'][i]);f.value=bone?.rot[i]??0;f.disabled=!bone}
+ for(const[id,val]of [['ikX',bone?.tail[0]],['ikY',bone?.tail[1]],['ikZ',bone?.tail[2]]]){$m(id).value=Number.isFinite(val)?val.toFixed(3):0;$m(id).disabled=!bone}
+ $m('rigShow').checked=rigEdit;
+ const ikrow=$m('motionIKKeys'),ikeys=(o?.rig&&getMotion().ikTracks?.[o.id]?.[chosenBone]?.keys)||[];
+ if(ikrow){ikrow.innerHTML='';if(ikeys.length){for(const k of ikeys){const btn=document.createElement('button');btn.textContent='IK '+k.t.toFixed(2)+'s';btn.classList.toggle('active',Math.abs(k.t-timelineTime)<.0001);btn.title='Jump to IK target keyframe';btn.onclick=()=>{seekTimeline(k.t);for(let j=0;j<3;j++)$m(['ikX','ikY','ikZ'][j]).value=Number(k.pos[j]).toFixed(3);updateMotionUI()};ikrow.append(btn)}}else ikrow.textContent='No IK target keys for selected bone'}
+ const a=getMotion(),p=a.physics;$m('phyEnabled').checked=p.enabled;$m('phyGravity').value=p.gravity;$m('phyGround').value=p.ground;
+ const body=getObj()?.body;$m('phyBody').checked=!!body?.enabled;$m('phyType').value=body?.type||'dynamic';$m('phyMass').value=body?.mass??1;$m('phyBounce').value=body?.bounce??.2;$m('phyFriction').value=body?.friction??.6;
+ for(let i=0;i<3;i++)$m(['phyVX','phyVY','phyVZ'][i]).value=body?.velocity?.[i]??0;
+ renderNLA();updateMotionBrief()
+}
+function renderNLA(){const div=$m('nlaRows');if(!div)return;div.innerHTML='';const a=getMotion();for(const l of a.nla.layers){const row=document.createElement('div');row.className='nlaLayer'+(chosenLayer===l.id?' selected':'');row.innerHTML=`<div class="nlaLayerTop"><input aria-label="Layer name" data-f="name" value="${escapeHtml(l.name)}"><label><input type="checkbox" data-f="mute" ${l.mute?'checked':''}>Mute</label><label><input type="checkbox" data-f="solo" ${l.solo?'checked':''}>Solo</label><button data-pick="1">Edit</button></div><div class="motionFields"><label>Blend<select data-f="mode"><option value="override" ${l.mode==='override'?'selected':''}>Override</option><option value="add" ${l.mode==='add'?'selected':''}>Additive</option></select></label>${[['weight','Weight'],['start','Start'],['end','End'],['offset','Offset'],['speed','Speed']].map(([f,label])=>`<label>${label}<input type="number" data-f="${f}" step="0.1" value="${l[f]}"></label>`).join('')}<label><input type="checkbox" data-f="loop" ${l.loop?'checked':''}>Loop clip</label></div>`;
+ row.querySelector('[data-pick]').onclick=()=>{chosenLayer=l.id;renderNLA()};row.querySelectorAll('[data-f]').forEach(input=>input.onchange=()=>{const f=input.dataset.f;if(input.type==='checkbox')l[f]=input.checked;else if(input.type==='number')l[f]=Number(input.value);else l[f]=input.value;if(f==='weight')l.weight=clamp(l.weight,0,1);if(f==='speed')l.speed=clamp(l.speed,.01,10);if(f==='end')l.end=Math.max(l.start+.01,l.end);chosenLayer=l.id;commit('Edited NLA '+f);seekTimeline(timelineTime);renderNLA()});div.append(row)}
+ if(!a.nla.layers.length)div.innerHTML='<p class="motionHelp">No NLA clips yet. Keyframe an object or bone, then choose “+ Layer from selected action.”</p>'
+}
+panel.querySelectorAll('[data-mtab]').forEach(b=>b.onclick=()=>{panel.querySelectorAll('[data-mtab]').forEach(x=>x.classList.toggle('active',x===b));panel.querySelectorAll('[data-mview]').forEach(x=>x.hidden=x.dataset.mview!==b.dataset.mtab);updateMotionUI();setTimeout(()=>resizeCanvas(true),0)});
+$m('rigBuild').onclick=()=>rigObject($m('rigTemplate').value,$m('rigMode').value);
+$m('rigBone').onchange=()=>{chosenBone=+$m('rigBone').value;updateMotionUI();refresh()};
+$m('rigShow').onchange=()=>{rigEdit=$m('rigShow').checked;refresh()};
+for(let axis=0;axis<3;axis++)$m(['boneRX','boneRY','boneRZ'][axis]).onchange=e=>{const o=selectRig();if(!o)return;o.rig.bones[chosenBone].rot[axis]=Number(e.target.value)||0;deformRig(o);commit('Rotated skeletal bone');refresh()};
+$m('boneKey').onclick=keyBone;
+$m('rigRest').onclick=()=>{const o=selectRig();if(!o)return;for(const b of o.rig.bones)b.rot=[0,0,0];deformRig(o);commit('Restored armature rest pose');updateMotionUI()};
+$m('rigKeyIK').onclick=()=>{const o=selectRig();if(!o)return showToast('Select a rigged mesh');const a=getMotion(),idx=chosenBone,t=+timelineTime.toFixed(4),pos=['ikX','ikY','ikZ'].map(id=>Number($m(id).value)||0);a.ikTracks[o.id]??={};const clip=a.ikTracks[o.id][idx]??={chain:+$m('rigChain').value,keys:[]};clip.chain=+$m('rigChain').value;const key={t,pos,ease:a.interpolation},same=clip.keys.findIndex(k=>Math.abs(k.t-t)<.0001);if(same>=0)clip.keys[same]=key;else clip.keys.push(key);clip.keys.sort((a,b)=>a.t-b.t);commit('Recorded IK target keyframe');showToast('IK target keyed at '+t.toFixed(2)+'s');updateMotionUI()};
+$m('rigDeleteIK').onclick=()=>{const o=selectRig();if(!o)return;const a=getMotion(),keys=a.ikTracks?.[o.id]?.[chosenBone]?.keys;if(!keys?.length)return showToast('No IK keys for this bone');const index=keys.findIndex(k=>Math.abs(k.t-timelineTime)<Math.max(.045,.55/a.fps));if(index<0)return showToast('Select an IK key marker first');keys.splice(index,1);commit('Deleted IK target keyframe');updateMotionUI();seekTimeline(timelineTime)};
+$m('rigSolve').onclick=()=>{const o=selectRig();if(!o)return;const target=['ikX','ikY','ikZ'].map(id=>Number($m(id).value)||0);solveIK(o,chosenBone,target,+$m('rigChain').value);commit('Solved skeletal IK target');updateMotionUI()};
+$m('nlaAdd').onclick=addNlaLayer;$m('nlaRemove').onclick=()=>{const a=getMotion(),i=a.nla.layers.findIndex(l=>l.id===chosenLayer);if(i<0)return showToast('Select an NLA layer');a.nla.layers.splice(i,1);chosenLayer=a.nla.layers[0]?.id||'';commit('Removed NLA layer');seekTimeline(timelineTime);renderNLA()};
+$m('phyEnabled').onchange=e=>{getMotion().physics.enabled=e.target.checked;commit('Toggled physics');seekTimeline(timelineTime);updateMotionUI()};
+for(const[id,key]of [['phyGravity','gravity'],['phyGround','ground']])$m(id).onchange=e=>{getMotion().physics[key]=Number(e.target.value)||0;commit('Edited physics environment');seekTimeline(timelineTime)};
+function setBody(){const o=getObj();if(!o)return showToast('Select a mesh object for physics');const old=o.body||{};o.body={enabled:$m('phyBody').checked,type:$m('phyType').value,mass:clamp($m('phyMass').value,.01,10000),bounce:clamp($m('phyBounce').value,0,1),friction:clamp($m('phyFriction').value,0,1),velocity:['phyVX','phyVY','phyVZ'].map(id=>Number($m(id).value)||0),basePos:old.basePos||o.pos.slice()};commit('Changed rigid body physics');seekTimeline(timelineTime);updateMotionUI()}
+for(const id of ['phyBody','phyType','phyMass','phyBounce','phyFriction','phyVX','phyVY','phyVZ'])$m(id).onchange=setBody;
+$m('phyReset').onclick=()=>{const o=getObj();if(!o?.body)return;const a=getMotion(),prior=a.physics.enabled;a.physics.enabled=false;seekTimeline(0);o.body.basePos=o.pos.slice();a.physics.enabled=prior;commit('Set rigid body start position');seekTimeline(timelineTime)};
+const originalUpdateTimelineUI=updateTimelineUI;
+updateTimelineUI=function(){originalUpdateTimelineUI();updateMotionBrief()};
+window.SPATIAL_MOTION_TEST={rigObject,solveIK,boneTransforms,deformRig,autoWeights,shellComponents,getMotion,applyRigMotion,addNlaLayer,selectRig,ikTracks:()=>getMotion().ikTracks,selectBone:n=>{chosenBone=n;updateMotionUI()},keyBone,rigTrack:getRigTrack,refreshUI:updateMotionUI,seek:t=>seekTimeline(t)};
+// MP4 and skinned GLB export modules install below and register on this API.
+updateMotionUI();
+})();
+
+/* SPATIAL SKETCH 3D v2.4 - true glTF 2.0 skinning export and local H.264/MP4 muxing.
+   Browser support for H.264 varies; capability is checked at run time. */
+(function installMotionExport24(){
+'use strict';
+const $x=id=>document.getElementById(id), api=window.SPATIAL_MOTION_TEST;
+const utf=new TextEncoder();
+const bytes=(...parts)=>{let arr=parts.map(p=>typeof p==='string'?utf.encode(p):p instanceof Uint8Array?p:new Uint8Array(p)),total=arr.reduce((n,p)=>n+p.length,0),out=new Uint8Array(total),at=0;for(let p of arr){out.set(p,at);at+=p.length}return out};
+const u8=n=>new Uint8Array([n&255]), u16=n=>new Uint8Array([(n>>>8)&255,n&255]),u32=n=>new Uint8Array([(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255]);
+const packed=(type,...data)=>{const payload=bytes(...data);return bytes(u32(payload.length+8),type,payload)};
+const full=(type,vers,flags,...data)=>packed(type,bytes(u8(vers),u8(flags>>16),u8(flags>>8),u8(flags)),...data);
+function recordStatus(s){const e=$x('mp4Status');if(e)e.textContent=s}
+function ownGLB(blob){return blob.arrayBuffer().then(buffer=>{
+ const dv=new DataView(buffer);if(dv.getUint32(0,true)!==0x46546c67)throw Error('Not a glTF GLB file');const body=new Uint8Array(buffer),len=dv.getUint32(12,true),json=JSON.parse(new TextDecoder().decode(body.slice(20,20+len)).replace(/\0+$/,''));let at=20+len,bin=new Uint8Array();if(at+8<=buffer.byteLength&&dv.getUint32(at+4,true)===0x004e4942)bin=body.slice(at+8,at+8+dv.getUint32(at,true));
+ const parts=[bin],a=getMotionOrThrow(),baseLen=bin.length;
+ function block(data,target){let arr=data instanceof Uint8Array?data:new Uint8Array(data.buffer,data.byteOffset,data.byteLength);let length=parts.reduce((s,x)=>s+x.length,0),pad=(4-length%4)%4;if(pad){parts.push(new Uint8Array(pad));length+=pad}parts.push(arr);json.bufferViews.push({buffer:0,byteOffset:length,byteLength:arr.byteLength,...(target?{target}:{})});return json.bufferViews.length-1}
+ function accessor(typed,type,component=5126,target){let view=block(typed,target),dims={SCALAR:1,VEC2:2,VEC3:3,VEC4:4,MAT4:16}[type]||1;json.accessors.push({bufferView:view,componentType:component,count:typed.length/dims,type});return json.accessors.length-1}
+ const boneIndexByObj={},animationBones=[];
+ for(const o of project.objects){if(!o.mesh||!o.rig)continue;const mi=json.nodes.findIndex(n=>n.extras?.spatialSketchId===o.id);if(mi<0)continue;const meshNode=json.nodes[mi],mesh=json.meshes[meshNode.mesh],prim=mesh?.primitives?.[0];if(!prim)continue;
+ const r=o.rig,n=r.restPositions.length/3;if(r.weights.length!==n)throw Error(o.name+': skeletal weights do not match mesh vertex count');const indices=new Uint16Array(n*4),weights=new Float32Array(n*4);for(let i=0;i<n;i++){
+  const row=r.weights[i];if(!row)throw Error('Missing influence at vertex '+i);let sum=0;for(let j=0;j<4;j++){indices[i*4+j]=row.j[j]||0;weights[i*4+j]=Math.max(0,row.w[j]||0);sum+=weights[i*4+j]}if(sum<1e-6)weights[i*4]=1;else for(let j=0;j<4;j++)weights[i*4+j]/=sum
+ }
+ prim.attributes.JOINTS_0=accessor(indices,'VEC4',5123,34962);prim.attributes.WEIGHTS_0=accessor(weights,'VEC4',5126,34962);
+ let nodes=[],ibms=new Float32Array(r.bones.length*16),boneEntries=[];
+ for(let i=0;i<r.bones.length;i++){let bone=r.bones[i],parent=bone.parent,node={name:o.name+' / '+bone.name,translation:parent<0?bone.head.slice():bone.head.map((v,j)=>v-r.bones[parent].head[j]),rotation:[0,0,0,1]},id=json.nodes.length;json.nodes.push(node);nodes.push(id);if(parent<0){meshNode.children??=[];meshNode.children.push(id)}else{json.nodes[nodes[parent]].children??=[];json.nodes[nodes[parent]].children.push(id)}
+  for(let j=0;j<16;j++)ibms[i*16+j]=j%5===0?1:0;
+  ibms[i*16+12]=-bone.head[0];ibms[i*16+13]=-bone.head[1];ibms[i*16+14]=-bone.head[2];
+  boneEntries.push({idx:i,node:id,object:o})
+ }
+ json.skins??=[];const im=accessor(ibms,'MAT4');json.skins.push({name:o.name+' skeletal bind',joints:nodes,inverseBindMatrices:im,skeleton:nodes[0]});meshNode.skin=json.skins.length-1;boneIndexByObj[o.id]=nodes;
+ animationBones.push(...boneEntries)
+ }
+ function layerSample(l,t){if(t<l.start||t>l.end)return null;let dur=Math.max(.001,l.clipEnd-l.clipStart),local=(t-l.start)*l.speed+l.offset;if(l.loop)local=((local%dur)+dur)%dur;else local=Math.max(0,Math.min(dur,local));return l.clipStart+local}
+ function boneAt(o,i,t,skipIK=false){let b=o.rig.bones[i],rotation=(b.baseRot||[0,0,0]).slice(),keys=a.rigTracks?.[o.id]?.[i];if(keys?.length)rotation=(poseAt(keys,t)?.rot||rotation).slice();const layers=a.nla.layers.filter(l=>!l.mute),solo=layers.some(l=>l.solo);for(const l of layers){if(solo&&!l.solo)continue;let lt=layerSample(l,t);if(lt==null)continue;let clips=l.boneTracks?.[o.id]?.[i];if(!clips?.length)continue;const rot=poseAt(clips,lt)?.rot,rest=clips[0]?.rot||[0,0,0];if(!rot)continue;let w=Math.max(0,Math.min(1,l.weight));rotation=rotation.map((v,j)=>l.mode==='add'?v+(rot[j]-rest[j])*w:v+(rot[j]-v)*w)}
+ const targets=a.ikTracks?.[o.id];if(!skipIK&&targets&&Object.values(targets).some(clip=>clip.keys?.length)){
+  const saved=o.rig.bones.map(b=>b.rot.slice());for(let j=0;j<o.rig.bones.length;j++)o.rig.bones[j].rot=boneAt(o,j,t,true);
+  for(const [idx,clip]of Object.entries(targets)){if(!clip.keys?.length)continue;const pose=poseAt(clip.keys,t);if(pose?.pos)api.solveIK(o,Number(idx),pose.pos,clip.chain||2,true)}
+  rotation=o.rig.bones[i].rot.slice();o.rig.bones.forEach((b,j)=>b.rot=saved[j])
+ }
+ return rotation}
+
+ function affected(o,i){if(a.rigTracks?.[o.id]?.[i]?.length||Object.values(a.ikTracks?.[o.id]||{}).some(c=>c.keys?.length))return true;return a.nla.layers.some(l=>l.boneTracks?.[o.id]?.[i]?.length)}
+ let anim=json.animations?.[0];if(!anim){json.animations??=[];anim={name:'SPATIAL SKETCH 3D / Motion Studio 2.4',channels:[],samplers:[]};json.animations.push(anim)}
+ let count=0,fps=Math.min(30,Math.max(1,Number(a.fps)||24)),duration=Math.min(120,Number(a.duration)||6),times=Array.from({length:Math.floor(duration*fps)+1},(_,i)=>Math.min(duration,i/fps));
+ for(const entry of animationBones){let o=entry.object,i=entry.idx;if(!affected(o,i))continue;count+=times.length;if(count>50000)throw Error('GLB skeletal animation exceeds 50,000 samples. Reduce duration, FPS or bone tracks.');let qprev=null,quats=[];for(const t of times){let q=eulerQuat(boneAt(o,i,t));if(qprev&&q.reduce((s,x,j)=>s+x*qprev[j],0)<0)q=q.map(x=>-x);quats.push(...q);qprev=q}
+ const timesId=accessor(new Float32Array(times),'SCALAR');json.accessors[timesId].min=[times[0]];json.accessors[timesId].max=[times[times.length-1]];
+ const quatId=accessor(new Float32Array(quats),'VEC4');anim.samplers.push({input:timesId,output:quatId,interpolation:'LINEAR'});anim.channels.push({sampler:anim.samplers.length-1,target:{node:entry.node,path:'rotation'}})
+ }
+ const merged=bytes(...parts),jbytes=utf.encode(JSON.stringify(json)),jpad=(4-jbytes.length%4)%4,bpad=(4-merged.length%4)%4;
+ json.buffers[0].byteLength=merged.length+bpad;let finalJSON=utf.encode(JSON.stringify(json)),jsonPad=(4-finalJSON.length%4)%4;
+ // Assemble GLB header with the updated binary and JSON chunks.
+ const head=new Uint8Array(12),hv=new DataView(head.buffer);hv.setUint32(0,0x46546c67,true);hv.setUint32(4,2,true);hv.setUint32(8,12+8+finalJSON.length+jsonPad+8+merged.length+bpad,true);
+ const jsonChunk=new Uint8Array(finalJSON.length+jsonPad);jsonChunk.fill(32);jsonChunk.set(finalJSON);
+ return new Blob([head,u32(jsonChunk.length).reverse(),utf.encode('JSON'),jsonChunk,u32(merged.length+bpad).reverse(),utf.encode('BIN\0'),merged,new Uint8Array(bpad)],{type:'model/gltf-binary'});
+})}
+function getMotionOrThrow(){if(!api?.getMotion)throw Error('Motion system unavailable');return api.getMotion()}
+const unmodifiedGLB=exportGLB,unmodifiedDownload=downloadBlob;
+async function exportSkinnedGLB(){const needs=project.objects.some(o=>o.mesh&&o.rig);if(!needs)return unmodifiedGLB();let intercepted=false;const before=project.objects.filter(o=>o.rig).map(o=>[o,o.mesh]);let exportBlob;
+ // Capture the ordinary GLB, temporarily substituting undeformed rest vertices.
+ downloadBlob=function(blob,name){if(name.toLowerCase().endsWith('.glb')){intercepted=true;exportBlob=blob}else unmodifiedDownload(blob,name)};
+ try{for(const[o]of before)o.mesh={...o.mesh,positions:o.rig.restPositions.slice(),normals:o.rig.restNormals.slice()};unmodifiedGLB()}finally{for(const[o,mesh]of before)o.mesh=mesh;downloadBlob=unmodifiedDownload}
+ if(!intercepted||!exportBlob)throw Error('Unable to intercept native GLB for skeletal skinning');let blob=await ownGLB(exportBlob);unmodifiedDownload(blob,safeName(project.name)+'_skinned.glb');recordStatus('Skinned GLB exported with JOINTS_0/WEIGHTS_0, bind matrices and bone rotation channels.');return blob
+}
+exportGLB=function(){exportSkinnedGLB().catch(e=>modal('GLB skin export failed','<p>'+escapeHtml(e.message)+'</p>'))};
+$x('rigGLBExport').onclick=exportGLB;
+function mp4Mux(samples,width,height,fps,avcc){
+ // ISO BMFF / AVC file, one chunk, fixed frame rate, no B-frames. AVC configuration comes from the browser encoder.
+ const ticks=90000,delta=Math.round(ticks/fps),duration=samples.length*delta;
+ const matrix=bytes(u32(65536),u32(0),u32(0),u32(0),u32(65536),u32(0),u32(0),u32(0),u32(1073741824));
+ const ft=packed('ftyp','isom',u32(512),'isom','iso2','avc1','mp41');
+ const mvhd=full('mvhd',0,0,u32(0),u32(0),u32(ticks),u32(duration),u32(65536),u16(256),u16(0),u32(0),u32(0),matrix,bytes(u32(0),u32(0),u32(0),u32(0),u32(0),u32(0)),u32(2));
+ const tkhd=full('tkhd',0,7,u32(0),u32(0),u32(1),u32(0),u32(duration),u32(0),u32(0),u16(0),u16(0),u16(0),u16(0),matrix,u32(width<<16),u32(height<<16));
+ const mdhd=full('mdhd',0,0,u32(0),u32(0),u32(ticks),u32(duration),u16(0x55c4),u16(0));
+ const hdlr=full('hdlr',0,0,u32(0),'vide',u32(0),u32(0),u32(0),'VideoHandler\0');
+ const vmhd=full('vmhd',0,1,u16(0),u16(0),u16(0),u16(0));
+ const dinf=packed('dinf',full('dref',0,0,u32(1),full('url ',0,1)));
+ const name=new Uint8Array(32);const n=utf.encode('Spatial Sketch H264');name[0]=n.length;name.set(n,1);
+ const avc1=packed('avc1',new Uint8Array(6),u16(1),u16(0),u16(0),u32(0),u32(0),u32(0),u16(width),u16(height),u32(0x00480000),u32(0x00480000),u32(0),u16(1),name,u16(24),u16(0xffff),packed('avcC',avcc));
+ const stsd=full('stsd',0,0,u32(1),avc1);
+ const stts=full('stts',0,0,u32(1),u32(samples.length),u32(delta));
+ const stsc=full('stsc',0,0,u32(1),u32(1),u32(samples.length),u32(1));
+ const stsz=full('stsz',0,0,u32(0),u32(samples.length),...samples.map(s=>u32(s.data.length)));
+ const stss=full('stss',0,0,u32(samples.filter(s=>s.key).length),...samples.map((s,i)=>s.key?u32(i+1):null).filter(Boolean));
+ function mov(offset){const stco=full('stco',0,0,u32(1),u32(offset));return packed('moov',mvhd,packed('trak',tkhd,packed('mdia',mdhd,hdlr,packed('minf',vmhd,dinf,packed('stbl',stsd,stts,stsc,stsz,stco,stss))))) }
+ const first=mov(0),offset=ft.length+first.length+8,moov=mov(offset),mdat=packed('mdat',...samples.map(s=>s.data));return new Blob([ft,moov,mdat],{type:'video/mp4'})
+}
+let exportingMP4=false;
+async function recordNativeMP4(width,height,fps,duration,saveTime){
+ const mime=['video/mp4;codecs=avc1.42E01E','video/mp4;codecs=avc1.42001E','video/mp4'].find(m=>window.MediaRecorder?.isTypeSupported(m));
+ if(!mime){recordStatus('No local MP4 encoder available. Use the WebM export control in the timeline.');return}
+ const offscreen=document.createElement('canvas');offscreen.width=width;offscreen.height=height;const ctx=offscreen.getContext('2d');const stream=offscreen.captureStream(0),track=stream.getVideoTracks()[0];
+ const recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:Math.min(9000000,width*height*fps*.18)}),chunks=[];
+ recorder.ondataavailable=e=>{if(e.data?.size)chunks.push(e.data)};
+ let stopResolve,stopReject;const stopped=new Promise((res,rej)=>{stopResolve=res;stopReject=rej});
+ recorder.onerror=e=>stopReject(e.error||Error('MP4 recorder failed'));recorder.onstop=stopResolve;
+ exportingMP4=true;$x('mp4Export').disabled=true;
+ try{window.SPATIAL_ANIMATION_TEST?.pause();recorder.start(200);const frames=Math.floor(duration*fps)+1;
+  for(let i=0;i<frames;i++){seekTimeline(Math.min(duration,i/fps));drawFrame();ctx.fillStyle='#fff';ctx.fillRect(0,0,width,height);ctx.drawImage(canvas,0,0,width,height);ctx.drawImage(overlay,0,0,width,height);track.requestFrame?.();
+   if(i%Math.max(1,Math.floor(fps/2))===0)recordStatus(`Recording H.264 MP4 frame ${i+1} / ${frames}`);
+   await new Promise(r=>setTimeout(r,1000/fps))
+  }
+  recorder.stop();await stopped;const movie=new Blob(chunks,{type:'video/mp4'});if(movie.size<512)throw Error('The browser emitted no MP4 data');
+  const sig=await movie.slice(4,8).text();if(sig!=='ftyp')throw Error('Recorder output is not an ISO BMFF MP4 file');
+  unmodifiedDownload(movie,safeName(project.name)+'_H264.mp4');recordStatus(`MP4 exported with browser recorder: ${(movie.size/1048576).toFixed(2)} MiB`)
+ }catch(e){if(recorder.state!=='inactive')recorder.stop();recordStatus('Native MP4 recording failed: '+e.message)}finally{stream.getTracks().forEach(t=>t.stop());exportingMP4=false;$x('mp4Export').disabled=false;seekTimeline(saveTime);updateTimelineUI()}
+}
+async function videoH264(){if(exportingMP4)return;const a=getMotionOrThrow();if(!Object.values(a.tracks).some(x=>x.length)&&!Object.values(a.rigTracks||{}).some(x=>Object.values(x).some(y=>y.length))&&!a.nla.layers.length)return showToast('Keyframe an object, bone or action before exporting video');
+ const width=Number($x('mp4Size').value)||640,height=Math.round(width*9/16),fps=Number($x('mp4FPS').value)||24,duration=Math.min(30,a.duration),count=Math.floor(duration*fps)+1,saveTime=timelineTime;
+ const cap=window.VideoEncoder&&window.VideoFrame&&VideoEncoder.isConfigSupported;
+ if(!cap)return recordNativeMP4(width,height,fps,duration,saveTime);
+ const configuration={codec:'avc1.42001E',width,height,bitrate:Math.min(9000000,width*height*fps*.17),framerate:fps,avc:{format:'avc'},latencyMode:'realtime'};
+ const support=await VideoEncoder.isConfigSupported(configuration);if(!support.supported)return recordNativeMP4(width,height,fps,duration,saveTime);
+ const offscreen=document.createElement('canvas');offscreen.width=width;offscreen.height=height;const ctx=offscreen.getContext('2d',{alpha:false});
+ const frames=[];let codecConfig=null,err=null;
+ const encoder=new VideoEncoder({output:(chunk,metadata)=>{if(metadata?.decoderConfig?.description)codecConfig=new Uint8Array(metadata.decoderConfig.description);let data=new Uint8Array(chunk.byteLength);chunk.copyTo(data);frames.push({data,key:chunk.type==='key',timestamp:chunk.timestamp})},error:e=>{err=e}});
+ encoder.configure(configuration);exportingMP4=true;$x('mp4Export').disabled=true;recordStatus('Encoding H.264 locally…');
+ try{if(typeof window.SPATIAL_ANIMATION_TEST?.pause==='function')window.SPATIAL_ANIMATION_TEST.pause();
+  for(let i=0;i<count;i++){
+   let t=Math.min(duration,i/fps);seekTimeline(t);drawFrame();ctx.fillStyle='#ffffff';ctx.fillRect(0,0,width,height);ctx.drawImage(canvas,0,0,width,height);ctx.drawImage(overlay,0,0,width,height);
+   const vf=new VideoFrame(offscreen,{timestamp:Math.round(i*1e6/fps),duration:Math.round(1e6/fps)});encoder.encode(vf,{keyFrame:i===0||i%fps===0});vf.close();if(i%16===0){recordStatus(`Encoding frame ${i+1} / ${count} (H.264)`);await new Promise(resolve=>requestAnimationFrame(resolve))}if(encoder.encodeQueueSize>16)await encoder.flush()
+  }
+  await encoder.flush();if(err)throw err;frames.sort((a,b)=>a.timestamp-b.timestamp);if(!codecConfig)throw Error('Encoder did not provide an AVC decoder configuration (avcC). This browser cannot mux MP4.');
+  let movie=mp4Mux(frames,width,height,fps,codecConfig);unmodifiedDownload(movie,safeName(project.name)+'_H264.mp4');recordStatus(`MP4 created: ${frames.length} H.264 frames, ${(movie.size/1048576).toFixed(2)} MiB.`);
+ }catch(e){recordStatus('MP4 export failed: '+e.message+' — WebM is still available.');console.error(e)}finally{encoder.close();exportingMP4=false;$x('mp4Export').disabled=false;seekTimeline(saveTime);updateTimelineUI()}
+}
+$x('mp4Export').onclick=()=>videoH264().catch(e=>recordStatus('Encoder not available: '+e.message));
+window.SPATIAL_MOTION_EXPORT_TEST={ownGLB,exportSkinnedGLB,mp4Mux,videoH264};
 })();
 
 </script>
