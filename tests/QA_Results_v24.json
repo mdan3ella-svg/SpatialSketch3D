@@ -1,0 +1,81 @@
+{
+  "startup": {
+    "loaded": true,
+    "motionAPI": true,
+    "exportAPI": true
+  },
+  "smoothSkinning": {
+    "vertices": 36,
+    "bones": 3,
+    "weights": 36,
+    "shift": 16.539027091908515,
+    "finite": true
+  },
+  "IKReachableChain": {
+    "error": 4.2187926511772476e-05,
+    "target": [
+      0.35,
+      0.2,
+      0.4
+    ],
+    "actual": [
+      0.35002755565988675,
+      0.20003178812426503,
+      0.40000316573961014
+    ]
+  },
+  "hardSurfaceWeights": {
+    "vertices": 36,
+    "allRigid": true
+  },
+  "animatedIK": {
+    "keyframes": 3,
+    "delta": 8.016188916568906,
+    "valid": true
+  },
+  "NLAComposition": {
+    "layers": 1,
+    "repeatEqual": true,
+    "muteChange": 0.125
+  },
+  "fixedStepPhysics": {
+    "pos": [
+      0,
+      0,
+      1.1682687499999997
+    ],
+    "deterministic": true,
+    "finite": true
+  },
+  "nativeRoundTrip": {
+    "version": 4,
+    "bones": 3,
+    "hasIK": true,
+    "hasRig": true,
+    "baseMesh": true,
+    "saveLength": 8384
+  },
+  "skinnedGLB": {
+    "bytes": 8612,
+    "skinCount": 1,
+    "joints": 3,
+    "attributes": [
+      "POSITION",
+      "NORMAL",
+      "TEXCOORD_0",
+      "JOINTS_0",
+      "WEIGHTS_0"
+    ],
+    "validHeader": true
+  },
+  "responsive": {
+    "screenWidths": [
+      1440,
+      1024,
+      390,
+      320
+    ],
+    "pass": true
+  },
+  "uncaughtJavaScriptErrors": []
+}

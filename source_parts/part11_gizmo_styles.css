@@ -1,0 +1,16 @@
+/* Spatial Sketch 3D v2.2: responsive, accessible interactive transforms */
+.spatialTransformDock{position:absolute;z-index:7;left:50%;transform:translateX(-50%);display:flex;justify-content:center;align-items:center;gap:5px;max-width:calc(100% - 12px);width:max-content;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);box-shadow:var(--lift);border-radius:10px;padding:5px 7px;pointer-events:auto}
+.spatialTransformDock button{white-space:nowrap;min-height:30px;padding:5px 8px;font-weight:700;font-size:11px}
+.ssSegment{display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:center}
+.ssDockSep{width:1px;height:24px;background:var(--line)}.ssDockHelp{font-size:10px;color:var(--muted);padding:0 5px;white-space:nowrap}
+.ssCompass{position:absolute;right:12px;z-index:5;width:128px;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:12px;padding:8px 8px 6px;box-shadow:var(--lift);pointer-events:auto;user-select:none}
+.ssCompassInner{position:relative;width:110px;height:110px;margin:auto}.ssAxisDot,.ssHome{position:absolute;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;font-weight:800;box-shadow:0 1px 6px #0002}
+.ssAxisDot{border:1.5px solid var(--axis-color);background:var(--panel);color:var(--axis-color);width:27px;height:27px;border-radius:50%;font-size:10px;padding:0}
+.ssAxisDot:hover,.ssAxisDot.active{background:var(--axis-color);color:white;outline:2px solid var(--panel)}
+.ssHome{width:30px;height:30px;border-radius:9px;border:1px solid var(--muted);background:var(--panel);color:var(--ink);z-index:15!important;font-size:18px;padding:0}
+.ssCompassCaption{font-size:9px;letter-spacing:1.2px;text-align:center;color:var(--muted);font-weight:800}
+@media(max-width:1200px){.ssDockHelp{display:none}}
+@media(max-width:740px){.spatialTransformDock{max-width:calc(100% - 10px);padding:4px;gap:3px}.spatialTransformDock button{min-height:28px;padding:4px 6px;font-size:10px}.ssDockSep{display:none}.ssCompass{right:5px;width:91px;padding:4px}.ssCompassInner{width:80px;height:80px}.ssAxisDot{width:21px;height:21px;font-size:8px}.ssHome{width:24px;height:24px;font-size:15px}.ssCompassCaption{font-size:8px}}
+@media(max-width:420px){.spatialTransformDock{width:max-content}.spatialTransformDock button{padding:4px;font-size:9px}.ssSegment{gap:1px}.ssCompass{width:82px}.ssCompassInner{width:72px;height:72px}.ssCompassCaption{font-size:7px}}
+/* Keep client-facing full-screen presentations free of authoring controls. */
+body.presentation .spatialTransformDock,body.presentation .ssCompass{display:none!important}
