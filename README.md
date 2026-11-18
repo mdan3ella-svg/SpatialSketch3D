@@ -1,38 +1,55 @@
-# SPATIAL SKETCH 3D v2.4 — MOTION LAB
+# Spatial Sketch 3D · Design Studio 3.0
 
-A VERTASCAN Creative Technology Application · Design Without Boundaries
+## Open or publish
 
-## Quick start
+Extract both ZIP parts into the same folder. Keep `index.html` and `cad/` side by side. Part 1 runs by itself for sketching, mesh modeling, motion and presentation.
 
-Open `index.html` in Chrome, Edge, or Firefox. All application JavaScript, CSS, and geometry routines are bundled locally; the application does not require a CDN or cloud service. For GitHub Pages upload `index.html` to the repository root.
+- **Offline single file** · Open `index.html` directly in a browser. Mesh Booleans use an embedded Manifold WebAssembly build.
+- **Local with exact CAD** · From the extracted folder, run `python -m http.server 8000` and open [http://localhost:8000](http://localhost:8000). The OpenCascade worker and WebAssembly are served from the local folder.
+- **GitHub Pages** · Commit `index.html`, `.nojekyll` and the complete `cad/` folder at the root of the publishing branch. In **Settings → Pages**, select **Deploy from a branch**, choose the branch and **/(root)**, then save. The CAD worker uses paths relative to the project page. [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 
-Go to **Timeline** → **MOTION LAB · 2.4** to access **Skeleton + IK**, **NLA Layers**, **Physics**, and **Video + GLB**. Open `demos/KINETIC_RIG_02_Editable_Demo.spatialsketch.json` from **Open Project** to try rigging, animated IK, an NLA action layer, and dynamic collisions together.
+```text
+index.html
+.nojekyll
+README.md
+QA.md
+cad/
+  engine.mjs
+  worker.mjs
+  occt.mjs
+  replicad_single.wasm
+  LICENSE
+  THIRD_PARTY.md
+```
 
-## What's new
+## Workspaces
 
-- Three editable bone-layout generators: generic humanoid proportions, quadruped, and articulated chain. Bounds-based placement; NOT semantic/anatomical model interpretation.
-- Smooth envelope weights (four influences per vertex) or rigid weights for disconnected shells. Weights and rest positions are stored in the native project.
-- FK bone rotation, selectable colored armature overlay, FABRIK IK on two- and three-bone chains, animated IK target keys.
-- Multilayer NLA action clips supporting object transform and bone tracks, weighted override or additive mixing, looping, speed, offset, mute and solo.
-- Fixed-step gravity, ground and AABB body contacts, mass, bounce, friction and initial velocities; timeline scrubbing evaluates from the initial state.
-- GLB 2.0 skin export (JOINTS_0, WEIGHTS_0, bone node hierarchy, inverse bind matrices, bone rotation animation channels), alongside earlier GLB object transform tracks.
-- Real H.264 MP4 export using built-in browser H.264 MediaRecorder support, or WebCodecs + inlined ISO BMFF muxer on devices that support it. Existing WebM export retained.
-- Responsive motion editor dock with independent scroll, preserving usable 3D viewport space.
+| Workspace | Use it for |
+| --- | --- |
+| Sketch | Draw in a construction plane, set grid snap and edit profile points |
+| Model | Build primitives, extrude or revolve profiles, run Booleans and edit NURBS |
+| Render | Save cameras, render images, bake maps and trace a scene |
+| Motion | Open the timeline, key objects and use the inherited animation and rigging tools |
+| Drawings | Change projection, open four views and create an A3 drawing |
 
-## Deliverables
+Open **Commands** with `Ctrl+K` or `Cmd+K`. Search for a tool and press Enter to run the first match. Use **Properties** for numeric transforms and geometry parameters. Use **Scene objects** to select or reveal hidden operands. Use **Modify selection** for a linear array or to place geometry on the ground plane.
 
-- `index.html` / `Spatial_Sketch_3D_v2_4_Advanced_Motion.html` — fully inlined application.
-- `source_parts/part01...part14` — complete application source modules, geometry and motion extensions.
-- `demos/KINETIC_RIG_02_Editable_Demo.spatialsketch.json` — editable native motion demo.
-- `demos/KINETIC_RIG_02_Skinned_Animated.glb` — generated glTF skeletal asset.
-- `demos/KINETIC_RIG_02_H264_Motion_Sample.mp4` — actual locally encoded H.264 sample.
-- `tests/test_motion_v24.py`, `tests/QA_Results_v24.json` — reproducible functional checks.
-- `OPERATOR_MANUAL.md`, `QA_REPORT.md`, `CHANGELOG.md` — documentation.
+## Model a cut through a NURBS solid
 
-## Rebuild
+1. Open the hosted or locally served build with both ZIP parts installed.
+2. Choose **Model → NURBS & STEP → Create patch**. In **Properties**, enter XYZ coordinates and positive rational weights in the control table. Choose **Apply controls**.
+3. Choose **Solid from patch** and enter the local Z depth. The solid is an exact swept CAD face. Use a regular patch without folds along that direction.
+4. Create and place a cutter. For example, place a cylinder so it passes through the curved solid.
+5. Under **Boolean operations**, choose **OpenCascade · exact B-rep**. Assign the NURBS solid to **A · Base** and the cutter to **B · Tool**. Choose **Subtract · A − B**.
+6. Select the result and choose **Export STEP**. The STEP file contains the CAD geometry in millimetres. The viewport uses a tessellated preview and project coordinates in metres.
+7. To change the cutter later, use **Reveal sources**, edit its properties and choose **Rebuild from operands** on the Boolean result. Turning a patch into a solid takes a snapshot of its control net. After further patch edits, create a new solid from that patch.
 
-Run `python build.py` at the package root to regenerate `index.html` from the complete `source_parts` collection. Does not fetch any dependencies. Open HTML directly for offline use or host under HTTPS to enable all available browser media APIs.
+## Geometry support
 
-## Caveats
+- **Manifold mesh** performs geometric union, difference and intersection on closed triangle meshes. Use it for watertight imported meshes and supported procedural solids. Open surfaces must be closed before use as solid operands.
+- **OpenCascade B-rep** supports boxes, spheres, cylinders, the existing tapered cone, tori, simple planar polygon extrusions, NURBS patch sweeps and exact Boolean results. Use the primitive dimensions for independent axis sizing. The exact primitive and exact Boolean result transform supports uniform scale. Use the mesh kernel for imported triangle models.
+- **NURBS** uses open-clamped knots. The loft uses two open profiles with corresponding control vertices. When both profiles are rational NURBS, use matching U degrees.
+- **Editable project JSON** stores objects, NURBS controls and Boolean source links. GLB, OBJ and STL export tessellated geometry. Export STEP for a selected exact solid and save the project JSON for continued editing.
+- Existing motion, rendering and drawing tools are retained. Movie encoding and viewport acceleration depend on browser support.
 
-This is an interactive advanced development edition, not a professional animation suite or certified dynamics package. Automatic rigging is heuristic, IK lacks pole-vector constraints and robust foot contact, physics is axis-aligned translation-only, GPU skinning is not implemented, and heavy models can be slow. CPU live skinning is limited to 28,000 vertices per selected mesh. MP4 requires a browser that provides H.264; the export UI reports codec support. The current video UI caps output at 1280×720 and 30 seconds. Native project files preserve editable rig/NLA/physics state. GLB reimport does not currently reconstruct editable rigs or NLA layers.
+See **QA.md** for the checks run on this release and remaining coverage.
